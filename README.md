@@ -93,7 +93,7 @@ The Product data resides in a Delta table that is then served to both Power BI a
     ![Power Automate-Execute SQL](./img/PowerAutomate-ExecuteSQL.png)
     
 
-### Power BI
+### Power BI Setup
 7.  Download the [`Editable-Products-Databricks.pbix`](src/Editable-Products-Databricks.pbix) file to your local machine and open it with the Power BI Desktop.
 
 8.  Once the report opens, click on **Transform Data** in the toolbar to open the Power Query Editor.  
@@ -118,3 +118,21 @@ The Product data resides in a Delta table that is then served to both Power BI a
     | Report viewers can only access...: | Checked | 
 
     ![ConfigureSemanticModel](./img/ConfigureSemanticModel.png)
+
+14. Go the **Editable-Products-Databricks** report in the workspace and verify that you can see the data in the report.
+
+### Power App Setup
+
+Showtime!  Now we will start to configure the Power App <-> Power BI Integration.
+
+15. With the **Editable-Products-Databricks** report open in Fabric Portal, click the **Edit** which will open the Filters, Visualizations and Data panes to the right.
+
+16. Select the **Power App for Power BI** control under the **Visualizations** pane to add it to the canvas of the report.
+     ![Visualizations](./img/Visualizations.png)
+
+17. Resize the Power App control so that it takes up the right section of the report.
+
+18. Next add the **ProductID** field (primary key) from the Data pane to the **PowerApps Data** control in the Visualization pane. This will change the appearance of the Power App control in the canvas and click the **Create New** button and then accept any popups to get you to the Power Apps Studio in a web browser.
+     ![PowerAppsCreateNew](./img/PowerAppsCreateNew.png)
+
+
