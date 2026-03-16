@@ -106,7 +106,7 @@ The Product data resides in a Delta table that is then served to both Power BI a
     c. Default Catalog (Optional)<BR>
     d. Native query **schema** and **catalog** values in the select statement. <BR>
 
-11. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes in Power Query and return to the report.  When finished, the report should look like the following:
+11. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes in Power Query and return to the report.  When finished, the report should look like the following:<BR>
     ![PowerBIDesktop](./img/PowerBIDesktop.png)
 
 12. Publish the Report to a Fabric/Power BI Workspace.
@@ -140,7 +140,7 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 20.  Resize the **Gallery1** control on your **Screen1** in the Power App to only take up the heading of the screen. I resized it to the Height of 129 pixels.
      ![GalleryHeight](./img/GalleryHeight.png)
 
-21. We will need to add an Azure Databricks connection to our data source so that the Power App can display the fields from Azure Databricks as necessary. It is important to understand this connection is independent of the Power BI datasource you created earlier. Later on we will tie the two together via a Power BI specific command.<BR>In the left navigation bar click on *Data* and then click the **Add data** button. and select **Azure Databricks** under **Connectors**.
+21. We will need to add an Azure Databricks connection to our data source so that the Power App can display the fields from Azure Databricks as necessary. It is important to understand this connection is independent of the Power BI datasource you created earlier. Later on we will tie the two together via a Power BI specific command.<BR>In the left navigation bar click on *Data* and then click the **Add data** button. and select **Azure Databricks** under **Connectors**.<br>
      ![PowerAppsAddData](./img/PowerAppsAddData.png)
 
 22. Under the Azure Databricks connection, set the following fields and click **Connect**.
@@ -197,7 +197,7 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
     ```javascript
     ProductIDLookup
     ```
-    Also delete the **NextArrow1** control by Right clicking on it and selecting Delete.  When finished your Gallery1 items should look like
+    Also delete the **NextArrow1** control by Right clicking on it and selecting Delete.  When finished your Gallery1 items should look like<br>
     ![PowerAppsGallery1](./img/PowerAppsGallery1.png)
 
 32. Now we need to update all the edit fields in the DataCard1 sections of Form1.  
