@@ -82,6 +82,25 @@ The Product data resides in a Delta table that is then served to both Power BI a
     | Server Hostname: | **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.| 
     | HTTP Path: | **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse| 
 
+6.  Once the solution is imported, we will need to change a few values on both the 
+**ReadDatabricksGoldProducts** and 
+**UpdateDatabricksGoldProducts** Cloud Flows.  Open each Cloud Flow within Power Automate and click **Edit** in the toolbar and change the following values in the Execute a SQL Statement item on the canvas.<BR>
+    a. Body/warehouse_id - change the SQL Warehouse ID to reflect your enviroment.  This can be found on the **Overview** tab of the Databricks SQL Warehouse.| <BR>
+    b. Body/statement - change the Databricks catalog and schema in the update statement to reflect your enviroment.<BR>
+    c. Body/catalog - change the Databricks catalog value to reflect your enviroment.<BR>
+    d. Body/schema - change the Databricks schema value to reflect your enviroment.<BR>
 
+    ![Power Automate-Execute SQL](./img/PowerAutomate-ExecuteSQL.png)
+    
 
+### Power BI
+7.  Download the [`Editable-Products-Databricks.pbix`](src/Editable-Products-Databricks.pbix) file to your local machine and open it with the Power BI Desktop.
+8.  Once the report opens, click on **Transform Data** in the toolbar to open the Power Query Editor.  
+9.  Within the Power Query editor, double click on the **Source** option under **Applied Steps** to modify our Databricks connection values. 
+10.  Change the following values to match your environment.<BR>
+    a. Server Hostname - **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.<BR>
+    b. HTTP Path - **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse.<BR>
+    c. Default Catalog (Optional)<BR>
+    d. Native query **schema** and **catalog** values in the select statement. <BR>
 
+11. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes. 
