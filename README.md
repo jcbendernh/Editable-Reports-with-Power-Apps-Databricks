@@ -273,8 +273,8 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
                 edtProductNumber.Text,
                 Value(edtUnitPrice.Text, "en-US"),
                 Value(edtRetailPrice.Text, "en-US"),
-                edtCategory.Text,
-                edtParentCategory.Text
+                edtParentCategory.Text,
+                edtCategory.Text
             )
         );
 
