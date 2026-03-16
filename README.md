@@ -178,7 +178,7 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 
     b. Items  
     ```javascript
-    LookUp('(schema).products', ProductID=F<irst('PowerBIIntegration'.Data).ProductID)
+    LookUp('(schema).products', ProductID=First('PowerBIIntegration'.Data).ProductID)
     ```
         
     For example, I used<br>
