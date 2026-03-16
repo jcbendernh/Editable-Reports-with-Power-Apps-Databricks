@@ -289,3 +289,19 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 
 **IMPORTANT:** The order of fields in this formula above must exactly match the order of the fields in the **Parameters** tab of the **When Power Apps calls a flow (V2)** step of the **UpdateDatabricksGoldProducts** Cloud Flow.  Thus, if you change anything in these instructions you will need to make sure these orders match.
     ![WhenPowerAppscallsaflow](./img/WhenPowerAppscallsaflow.png)
+
+37. Edits are complete, **save the Power App** and then click **Publish** and select the **Publish this Version** on the pop-up screen.
+
+38.  Return to the Power BI **Editable-Products-Databricks** report in the Fabric Workspace and click **Save** in the toolbar and then click **Reading View** in the toolbar
+
+39. Refresh the browser and to test the report.  If prompted with an **Allow Power-BI-Databrick-Edit to access your data?** pop up, click **Allow**.
+
+40. Select a row in the table and modify the a value in the Power App and click the Update Product Info button.  You should see the data change in the report as well.
+    ![FinalReport](./img/FinalReport.png)
+
+**NOTE:** You can add other advanced properties to the fields in the Power App to control advanced behavior.  For example, you can clear the update successful message at the bottom of the Power App by add the following value to the OnChange property of all the edt fields.
+```javascript
+Set(varUpdateMessage, Blank());
+```
+
+** Congratulations!  You have completed this tutorial **
