@@ -115,5 +115,6 @@ The Product data resides in a Delta table that is then served to both Power BI a
     |Field | Value |  
     |----------|----------|
     | Authentication Type: | OAuth2 |
-    | Report views can only access...: | Checked | 
+    | Report viewers can only access...: | Checked | 
 
+    ![ConfigureSemanticModel](./img/ConfigureSemanticModel.png)
