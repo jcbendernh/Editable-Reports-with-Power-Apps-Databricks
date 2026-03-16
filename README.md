@@ -47,28 +47,28 @@ The Product data resides in a Delta table that is then served to both Power BI a
 1. Upload the [`products.csv`](./src/products.csv) to a volume within your Databricks Unity Catalog.  For instructions on how to do so, check out [Upload files to a Unity Catalog volume](https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-to-volume).
 2. Create a Python based notebook in your Databricks workspace and paste the following cells to read the products.csv and write the data to a new delta table in your Databricks catalog. <BR>
     ```python
-    df = spark.read.option("header", "true").option("inferSchema", "true").csv("/Volumes/<catalog>/<schema>/products/products.csv")
+    df = spark.read.option("header", "true").option("inferSchema", "true").csv("/Volumes/(catalog)/(schema)/products/products.csv")
     display(df)
     ```
-    Replace <catalog> and <schema> with you catalog and schema.<br>
+    Replace (catalog) and (schema) with you catalog and schema.<br>
 
     ```python
-    df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable("<catalog>.<schema>.products")
+    df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable("(catalog).(schema).products")
     ```
 3. We need to make the ProductID field a non nullable primary key for the integration to work in this scenario.  To do so, paste the following cells into the notebook and run them.
     ```python
     %sql
-    ALTER TABLE <catalog>.<schema>.products 
+    ALTER TABLE (catalog).(schema).products 
     ALTER COLUMN ProductID SET NOT NULL
     ```
     &nbsp;
     ```python
     %sql
-    ALTER TABLE <catalog>.<schema>.products 
+    ALTER TABLE (catalog).(schema).products 
     ADD CONSTRAINT products_pk PRIMARY KEY (ProductID)
     ```
 
-**NOTE:** Please remember your values for <catalog>.<schema>.products as we will use these later on for Power BI, Power Apps and Power Automate.
+**NOTE:** Please remember your values for (catalog).(schema).products as we will use these later on for Power BI, Power Apps and Power Automate.
 
 ### Power Automate Setup
 
@@ -135,4 +135,26 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 18. Next add the **ProductID** field (primary key) from the Data pane to the **PowerApps Data** control in the Visualization pane. This will change the appearance of the Power App control in the canvas and click the **Create New** button and then accept any popups to get you to the Power Apps Studio in a web browser.
      ![PowerAppsCreateNew](./img/PowerAppsCreateNew.png)
 
+19.  Once in the Power Apps studio, it will create the form for you with a Gallery control listing all the ProductIDs. If you are not a Power Apps expert, it could get complicate quickly.  Thus, to keep it simple for these instructions, we will utilize a Form control and then embed the fields in the form along with a submit button to get our changes to post to Azure Databricks via the Power Automate Cloud Flow.
 
+20.  Resize the **Gallery1** control on your **Screen1** in the Power App to only take up the heading of the screen. I resized it to the Height of 129 pixels.
+     ![GalleryHeight](./img/GalleryHeight.png)
+
+21. We will need to add an Azure Databricks connection to our data source so that the Power App can display the fields from Azure Databricks as necessary. It is important to understand this connection is independent of the Power BI datasource you created earlier. Later on we will tie the two together via a Power BI specific command.<BR>In the left navigation bar click on *Data* and then click the **Add data** button. and select **Azure Databricks** under **Connectors**.
+     ![PowerAppsAddData](./img/PowerAppsAddData.png)
+
+22. Under the Azure Databricks connection, set the following fields and click **Connect**.
+
+    |Field | Value |  
+    |----------|----------|
+    | Authentication Type: | OAuth Connection |
+    | Server Hostname: | **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.| 
+    | HTTP Path: | **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse| 
+
+23. Under the choose a dataset control, select the Catalog  and then **(schema).Products** table and click **Connect**.  When finished your screen should look like the following.
+     ![PowerAppsDataProducts](./img/PowerAppsDataProducts.png)
+
+24. Insert an Edit Form on Screen1 of the Canvas app by select **+ Insert** in the toolbar and then select **Edit Form** and select our new Azure Databricks data source.
+
+25. Let resize Form1 so that it slightly overlaps the gallery. For positioning, I gave it a **Y value** of **75**.  When finished, it should look like the screen below.
+     ![PowerAppsForm1](./img/PowerAppsForm1.png)
