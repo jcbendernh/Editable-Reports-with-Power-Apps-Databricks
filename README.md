@@ -228,3 +228,61 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
     ```
     When finished, your screen should look similar to:
     ![PowerAppsFormedtValues](./img/PowerAppsFormedtValues.png)
+
+33. We need to add 2 controls to the bottom of **Screen1** below **Gallery1**.  
+    a. Button - On the toolbar, click **+ Insert** and select **Button** and set the button properties to the following:
+    |Property | Value |  
+    |----------|----------|
+    | Name | btnUpdate | 
+    | Text | Update Product Info: |
+    | Position X | 116 | 
+    | Position Y | 955 | 
+    | Size - Width | 400 | 
+    | Size - Height | 70 | 
+    
+    b. Text Label - On the toolbar, click **+ Insert** and select **Text Label** and set the button properties to the following:
+    |Property | Value |  
+    |----------|----------|
+    | Name | UpdateProductInfoStatus | 
+    | Text | varUpdateMessage |
+    | Position X | 50 | 
+    | Position Y | 1040 | 
+    | Size - Width | 560 | 
+    | Size - Height | 70 | 
+
+    When finished, your screen should look similar to:
+    ![PowerAppsScreen1](./img/PowerAppsScreen1.png)
+
+34. Now we need to send updates back to Azure Databricks. Our first step is to add the Power Automate Cloud Flow to the Power App.  To do so click on the **elipsis(...)** on the **left navigation bar** and select **Power Automate**.
+
+35. Click **+ Add flow** and select **UpdateDatabricksGoldProducts** Cloud Flow.  When done, it should show in the listing.
+    ![PowerAppsAddFlow](./img/PowerAppsAddFlow.png)
+
+36. Our last step is to call the **UpdateDatabricksGoldProducts** Cloud Flow from our newly inserted button. To do so, select the button on the screen and add the following code to the **OnSelect** property.
+    ```javascript
+    // Reset state
+    Set(varUpdateMessage, Blank());
+
+    IfError(
+        // Try: run the flow
+        Set(
+            varUpdateResponse,
+            UpdateDatabricksGoldProducts.Run(
+                ProductIDLookup.Text,
+                edtProductName.Text,
+                edtProductNumber.Text,
+                Value(edtUnitPrice.Text, "en-US"),
+                Value(edtRetailPrice.Text, "en-US"),
+                edtParentCategory.Text,
+                edtCategory.Text
+            )
+        );
+
+        // If the flow call succeeds
+        Set(varUpdateMessage, "Update succeeded"),
+
+        // If the flow call errors
+        Set(varUpdateMessage, "Update failed")
+    );
+    PowerBIIntegration.Refresh()
+    ```
