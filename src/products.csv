@@ -1,0 +1,523 @@
+ProductID,ProductName,ProductNumber,UnitPrice,RetailPrice,ModifiedDate,Source,Category,ParentCategory
+ADV-680,"HL Road Frame - Black, 58",FR-R92B-58,1059.31,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-706,"HL Road Frame - Red, 58",FR-R92R-58,1059.31,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-707,"Sport-100 Helmet, Red",HL-U509-R,13.0863,34.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Helmets,Accessories
+ADV-708,"Sport-100 Helmet, Black",HL-U509,13.0863,34.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Helmets,Accessories
+ADV-709,"Mountain Bike Socks, M",SO-B909-M,3.3963,9.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Socks,Clothing
+ADV-710,"Mountain Bike Socks, L",SO-B909-L,3.3963,9.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Socks,Clothing
+ADV-711,"Sport-100 Helmet, Blue",HL-U509-B,13.0863,34.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Helmets,Accessories
+ADV-712,AWC Logo Cap,CA-1098,6.9223,8.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Caps,Clothing
+ADV-713,"Long-Sleeve Logo Jersey, S",LJ-0192-S,38.4923,49.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-714,"Long-Sleeve Logo Jersey, M",LJ-0192-M,38.4923,49.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-715,"Long-Sleeve Logo Jersey, L",LJ-0192-L,38.4923,49.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-716,"Long-Sleeve Logo Jersey, XL",LJ-0192-X,38.4923,49.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-717,"HL Road Frame - Red, 62",FR-R92R-62,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-718,"HL Road Frame - Red, 44",FR-R92R-44,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-719,"HL Road Frame - Red, 48",FR-R92R-48,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-720,"HL Road Frame - Red, 52",FR-R92R-52,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-721,"HL Road Frame - Red, 56",FR-R92R-56,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-722,"LL Road Frame - Black, 58",FR-R38B-58,204.6251,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-723,"LL Road Frame - Black, 60",FR-R38B-60,204.6251,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-724,"LL Road Frame - Black, 62",FR-R38B-62,204.6251,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-725,"LL Road Frame - Red, 44",FR-R38R-44,187.1571,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-726,"LL Road Frame - Red, 48",FR-R38R-48,187.1571,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-727,"LL Road Frame - Red, 52",FR-R38R-52,187.1571,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-728,"LL Road Frame - Red, 58",FR-R38R-58,187.1571,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-729,"LL Road Frame - Red, 60",FR-R38R-60,187.1571,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-730,"LL Road Frame - Red, 62",FR-R38R-62,187.1571,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-731,"ML Road Frame - Red, 44",FR-R72R-44,352.1394,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-732,"ML Road Frame - Red, 48",FR-R72R-48,352.1394,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-733,"ML Road Frame - Red, 52",FR-R72R-52,352.1394,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-734,"ML Road Frame - Red, 58",FR-R72R-58,352.1394,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-735,"ML Road Frame - Red, 60",FR-R72R-60,352.1394,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-736,"LL Road Frame - Black, 44",FR-R38B-44,204.6251,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-737,"LL Road Frame - Black, 48",FR-R38B-48,204.6251,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-738,"LL Road Frame - Black, 52",FR-R38B-52,204.6251,337.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-739,"HL Mountain Frame - Silver, 42",FR-M94S-42,747.2002,1364.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-740,"HL Mountain Frame - Silver, 44",FR-M94S-44,706.811,1364.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-741,"HL Mountain Frame - Silver, 48",FR-M94S-52,706.811,1364.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-742,"HL Mountain Frame - Silver, 46",FR-M94S-46,747.2002,1364.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-743,"HL Mountain Frame - Black, 42",FR-M94B-42,739.041,1349.6,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-744,"HL Mountain Frame - Black, 44",FR-M94B-44,699.0928,1349.6,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-745,"HL Mountain Frame - Black, 48",FR-M94B-48,699.0928,1349.6,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-746,"HL Mountain Frame - Black, 46",FR-M94B-46,739.041,1349.6,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-747,"HL Mountain Frame - Black, 38",FR-M94B-38,739.041,1349.6,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-748,"HL Mountain Frame - Silver, 38",FR-M94S-38,747.2002,1364.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-749,"Road-150 Red, 62",BK-R93R-62,2171.2942,3578.27,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-750,"Road-150 Red, 44",BK-R93R-44,2171.2942,3578.27,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-751,"Road-150 Red, 48",BK-R93R-48,2171.2942,3578.27,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-752,"Road-150 Red, 52",BK-R93R-52,2171.2942,3578.27,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-753,"Road-150 Red, 56",BK-R93R-56,2171.2942,3578.27,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-754,"Road-450 Red, 58",BK-R68R-58,884.7083,1457.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-755,"Road-450 Red, 60",BK-R68R-60,884.7083,1457.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-756,"Road-450 Red, 44",BK-R68R-44,884.7083,1457.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-757,"Road-450 Red, 48",BK-R68R-48,884.7083,1457.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-758,"Road-450 Red, 52",BK-R68R-52,884.7083,1457.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-759,"Road-650 Red, 58",BK-R50R-58,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-760,"Road-650 Red, 60",BK-R50R-60,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-761,"Road-650 Red, 62",BK-R50R-62,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-762,"Road-650 Red, 44",BK-R50R-44,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-763,"Road-650 Red, 48",BK-R50R-48,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-764,"Road-650 Red, 52",BK-R50R-52,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-765,"Road-650 Black, 58",BK-R50B-58,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-766,"Road-650 Black, 60",BK-R50B-60,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-767,"Road-650 Black, 62",BK-R50B-62,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-768,"Road-650 Black, 44",BK-R50B-44,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-769,"Road-650 Black, 48",BK-R50B-48,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-770,"Road-650 Black, 52",BK-R50B-52,486.7066,782.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-771,"Mountain-100 Silver, 38",BK-M82S-38,1912.1544,3399.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-772,"Mountain-100 Silver, 42",BK-M82S-42,1912.1544,3399.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-773,"Mountain-100 Silver, 44",BK-M82S-44,1912.1544,3399.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-774,"Mountain-100 Silver, 48",BK-M82S-48,2250.0,3999.99,2025-05-15T20:41:52.757Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-775,"Mountain-100 Black, 38",BK-M82B-38,1898.0944,3374.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-776,"Mountain-100 Black, 42",BK-M82B-42,1898.0944,3374.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-777,"Mountain-100 Black, 44",BK-M82B-44,1898.0944,3374.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-778,"Mountain-100 Black, 48",BK-M82B-48,1898.0944,3374.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-779,"Mountain-200 Silver, 38",BK-M68S-38,1265.6195,2319.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-780,"Mountain-200 Silver, 42",BK-M68S-42,1265.6195,2319.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-781,"Mountain-200 Silver, 46",BK-M68S-46,1265.6195,2319.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-782,"Mountain-200 Black, 38",BK-M68B-38,1251.9813,2294.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-783,"Mountain-200 Black, 42",BK-M68B-42,1251.9813,2294.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-784,"Mountain-200 Black, 46",BK-M68B-46,1251.9813,2294.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-785,"Mountain-300 Black, 38",BK-M47B-38,598.4354,1079.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-786,"Mountain-300 Black, 40",BK-M47B-40,598.4354,1079.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-787,"Mountain-300 Black, 44",BK-M47B-44,598.4354,1079.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-788,"Mountain-300 Black, 48",BK-M47B-48,598.4354,1079.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-789,"Road-250 Red, 44",BK-R89R-44,1518.7864,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-790,"Road-250 Red, 48",BK-R89R-48,1518.7864,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-791,"Road-250 Red, 52",BK-R89R-52,1518.7864,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-792,"Road-250 Red, 58",BK-R89R-58,1554.9479,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-793,"Road-250 Black, 44",BK-R89B-44,1554.9479,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-794,"Road-250 Black, 48",BK-R89B-48,1554.9479,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-795,"Road-250 Black, 52",BK-R89B-52,1554.9479,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-796,"Road-250 Black, 58",BK-R89B-58,1554.9479,2443.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-797,"Road-550-W Yellow, 38",BK-R64Y-38,713.0798,1120.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-798,"Road-550-W Yellow, 40",BK-R64Y-40,713.0798,1120.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-799,"Road-550-W Yellow, 42",BK-R64Y-42,713.0798,1120.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-800,"Road-550-W Yellow, 44",BK-R64Y-44,713.0798,1120.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-801,"Road-550-W Yellow, 48",BK-R64Y-48,713.0798,1120.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-802,LL Fork,FK-1639,65.8097,148.22,2008-03-11T10:01:36.827Z,AdventureWorksLT,Forks,Components
+ADV-803,ML Fork,FK-5136,77.9176,175.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Forks,Components
+ADV-804,HL Fork,FK-9939,101.8936,229.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Forks,Components
+ADV-805,LL Headset,HS-0296,15.1848,34.2,2008-03-11T10:01:36.827Z,AdventureWorksLT,Headsets,Components
+ADV-806,ML Headset,HS-2451,45.4168,102.29,2008-03-11T10:01:36.827Z,AdventureWorksLT,Headsets,Components
+ADV-807,HL Headset,HS-3479,55.3801,124.73,2008-03-11T10:01:36.827Z,AdventureWorksLT,Headsets,Components
+ADV-808,LL Mountain Handlebars,HB-M243,19.7758,44.54,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-809,ML Mountain Handlebars,HB-M763,27.4925,61.92,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-810,HL Mountain Handlebars,HB-M918,53.3999,120.27,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-811,LL Road Handlebars,HB-R504,19.7758,44.54,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-812,ML Road Handlebars,HB-R720,27.4925,61.92,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-813,HL Road Handlebars,HB-R956,53.3999,120.27,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-814,"ML Mountain Frame - Black, 38",FR-M63B-38,185.8193,348.76,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-815,LL Mountain Front Wheel,FW-M423,26.9708,60.745,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-816,ML Mountain Front Wheel,FW-M762,92.8071,209.025,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-817,HL Mountain Front Wheel,FW-M928,133.2955,300.215,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-818,LL Road Front Wheel,FW-R623,37.9909,85.565,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-819,ML Road Front Wheel,FW-R762,110.2829,248.385,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-820,HL Road Front Wheel,FW-R820,146.5466,330.06,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-821,Touring Front Wheel,FW-T905,96.7964,218.01,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-822,"ML Road Frame-W - Yellow, 38",FR-R72Y-38,360.9428,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-823,LL Mountain Rear Wheel,RW-M423,38.9588,87.745,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-824,ML Mountain Rear Wheel,RW-M762,104.7951,236.025,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-825,HL Mountain Rear Wheel,RW-M928,145.2835,327.215,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-826,LL Road Rear Wheel,RW-R623,49.9789,112.565,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-827,ML Road Rear Wheel,RW-R762,122.2709,275.385,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-828,HL Road Rear Wheel,RW-R820,158.5346,357.06,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-829,Touring Rear Wheel,RW-T905,108.7844,245.01,2008-03-11T10:01:36.827Z,AdventureWorksLT,Wheels,Components
+ADV-830,"ML Mountain Frame - Black, 40",FR-M63B-40,185.8193,348.76,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-831,"ML Mountain Frame - Black, 44",FR-M63B-44,185.8193,348.76,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-832,"ML Mountain Frame - Black, 48",FR-M63B-48,185.8193,348.76,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-833,"ML Road Frame-W - Yellow, 40",FR-R72Y-40,360.9428,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-834,"ML Road Frame-W - Yellow, 42",FR-R72Y-42,360.9428,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-835,"ML Road Frame-W - Yellow, 44",FR-R72Y-44,360.9428,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-836,"ML Road Frame-W - Yellow, 48",FR-R72Y-48,360.9428,594.83,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-837,"HL Road Frame - Black, 62",FR-R92B-62,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-838,"HL Road Frame - Black, 44",FR-R92B-44,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-839,"HL Road Frame - Black, 48",FR-R92B-48,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-840,"HL Road Frame - Black, 52",FR-R92B-52,868.6342,1431.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Frames,Components
+ADV-841,"Men's Sports Shorts, S",SH-M897-S,24.7459,59.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Shorts,Clothing
+ADV-842,"Touring-Panniers, Large",PA-T100,51.5625,125.0,2008-03-11T10:01:36.827Z,AdventureWorksLT,Panniers,Accessories
+ADV-843,Cable Lock,LO-C100,10.3125,25.0,2008-03-11T10:01:36.827Z,AdventureWorksLT,Locks,Accessories
+ADV-844,Minipump,PU-0452,8.2459,19.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pumps,Accessories
+ADV-845,Mountain Pump,PU-M044,10.3084,24.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pumps,Accessories
+ADV-846,Taillights - Battery-Powered,LT-T990,5.7709,13.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Lights,Accessories
+ADV-847,Headlights - Dual-Beam,LT-H902,14.4334,34.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Lights,Accessories
+ADV-848,Headlights - Weatherproof,LT-H903,18.5584,44.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Lights,Accessories
+ADV-849,"Men's Sports Shorts, M",SH-M897-M,24.7459,59.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Shorts,Clothing
+ADV-850,"Men's Sports Shorts, L",SH-M897-L,24.7459,59.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Shorts,Clothing
+ADV-851,"Men's Sports Shorts, XL",SH-M897-X,24.7459,59.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Shorts,Clothing
+ADV-852,"Women's Tights, S",TG-W091-S,30.9334,74.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tights,Clothing
+ADV-853,"Women's Tights, M",TG-W091-M,30.9334,74.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tights,Clothing
+ADV-854,"Women's Tights, L",TG-W091-L,30.9334,74.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tights,Clothing
+ADV-855,"Men's Bib-Shorts, S",SB-M891-S,37.1209,89.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Bib-Shorts,Clothing
+ADV-856,"Men's Bib-Shorts, M",SB-M891-M,37.1209,89.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Bib-Shorts,Clothing
+ADV-857,"Men's Bib-Shorts, L",SB-M891-L,37.1209,89.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Bib-Shorts,Clothing
+ADV-858,"Half-Finger Gloves, S",GL-H102-S,9.1593,24.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Gloves,Clothing
+ADV-859,"Half-Finger Gloves, M",GL-H102-M,9.1593,24.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Gloves,Clothing
+ADV-860,"Half-Finger Gloves, L",GL-H102-L,9.1593,24.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Gloves,Clothing
+ADV-861,"Full-Finger Gloves, S",GL-F110-S,15.6709,37.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Gloves,Clothing
+ADV-862,"Full-Finger Gloves, M",GL-F110-M,15.6709,37.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Gloves,Clothing
+ADV-863,"Full-Finger Gloves, L",GL-F110-L,15.6709,37.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Gloves,Clothing
+ADV-864,"Classic Vest, S",VE-C304-S,23.749,63.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Vests,Clothing
+ADV-865,"Classic Vest, M",VE-C304-M,23.749,63.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Vests,Clothing
+ADV-866,"Classic Vest, L",VE-C304-L,23.749,63.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Vests,Clothing
+ADV-867,"Women's Mountain Shorts, S",SH-W890-S,26.1763,69.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Shorts,Clothing
+ADV-868,"Women's Mountain Shorts, M",SH-W890-M,26.1763,69.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Shorts,Clothing
+ADV-869,"Women's Mountain Shorts, L",SH-W890-L,26.1763,69.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Shorts,Clothing
+ADV-870,Water Bottle - 30 oz.,WB-H098,1.8663,4.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Bottles and Cages,Accessories
+ADV-871,Mountain Bottle Cage,BC-M005,4.25,10.99,2024-03-03T17:05:00.000Z,AdventureWorksLT,Bottles and Cages,Accessories
+ADV-872,Road Bottle Cage,BC-R205,3.99,10.99,2025-05-15T16:43:36.680Z,AdventureWorksLT,Bottles and Cages,Accessories
+ADV-873,Patch Kit/8 Patches,PK-7098,0.8565,2.29,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-874,"Racing Socks, M",SO-R809-M,3.3623,8.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Socks,Clothing
+ADV-875,"Racing Socks, L",SO-R809-L,3.3623,8.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Socks,Clothing
+ADV-876,Hitch Rack - 4-Bike,RA-H123,44.88,120.0,2008-03-11T10:01:36.827Z,AdventureWorksLT,Bike Racks,Accessories
+ADV-877,Bike Wash - Dissolver,CL-9009,2.9733,7.95,2008-03-11T10:01:36.827Z,AdventureWorksLT,Cleaners,Accessories
+ADV-878,Fender Set - Mountain,FE-6654,8.2205,21.98,2008-03-11T10:01:36.827Z,AdventureWorksLT,Fenders,Accessories
+ADV-879,All-Purpose Bike Stand,ST-1401,59.99,164.99,2025-05-15T14:27:50.190Z,AdventureWorksLT,Bike Stands,Accessories
+ADV-880,Hydration Pack - 70 oz.,HY-1023-70,20.5663,54.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Hydration Packs,Accessories
+ADV-881,"Short-Sleeve Classic Jersey, S",SJ-0194-S,41.5723,53.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-882,"Short-Sleeve Classic Jersey, M",SJ-0194-M,41.5723,53.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-883,"Short-Sleeve Classic Jersey, L",SJ-0194-L,41.5723,53.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-884,"Short-Sleeve Classic Jersey, XL",SJ-0194-X,41.5723,53.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Jerseys,Clothing
+ADV-885,"HL Touring Frame - Yellow, 60",FR-T98Y-60,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-886,"LL Touring Frame - Yellow, 62",FR-T67Y-62,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-887,"HL Touring Frame - Yellow, 46",FR-T98Y-46,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-888,"HL Touring Frame - Yellow, 50",FR-T98Y-50,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-889,"HL Touring Frame - Yellow, 54",FR-T98Y-54,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-890,"HL Touring Frame - Blue, 46",FR-T98U-46,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-891,"HL Touring Frame - Blue, 50",FR-T98U-50,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-892,"HL Touring Frame - Blue, 54",FR-T98U-54,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-893,"HL Touring Frame - Blue, 60",FR-T98U-60,601.7437,1003.91,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-894,Rear Derailleur,RD-2308,53.9282,121.46,2008-03-11T10:01:36.827Z,AdventureWorksLT,Derailleurs,Components
+ADV-895,"LL Touring Frame - Blue, 50",FR-T67U-50,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-896,"LL Touring Frame - Blue, 54",FR-T67U-54,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-897,"LL Touring Frame - Blue, 58",FR-T67U-58,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-898,"LL Touring Frame - Blue, 62",FR-T67U-62,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-899,"LL Touring Frame - Yellow, 44",FR-T67Y-44,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-900,"LL Touring Frame - Yellow, 50",FR-T67Y-50,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-901,"LL Touring Frame - Yellow, 54",FR-T67Y-54,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-902,"LL Touring Frame - Yellow, 58",FR-T67Y-58,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-903,"LL Touring Frame - Blue, 44",FR-T67U-44,199.8519,333.42,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Frames,Components
+ADV-904,"ML Mountain Frame-W - Silver, 40",FR-M63S-40,199.3757,364.09,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-905,"ML Mountain Frame-W - Silver, 42",FR-M63S-42,199.3757,364.09,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-906,"ML Mountain Frame-W - Silver, 46",FR-M63S-46,199.3757,364.09,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-907,Rear Brakes,RB-9231,47.286,106.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Brakes,Components
+ADV-908,LL Mountain Seat/Saddle,SE-M236,12.0413,27.12,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-909,ML Mountain Seat/Saddle,SE-M798,17.3782,39.14,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-910,HL Mountain Seat/Saddle,SE-M940,23.3722,52.64,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-911,LL Road Seat/Saddle,SE-R581,12.0413,27.12,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-912,ML Road Seat/Saddle,SE-R908,17.3782,39.14,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-913,HL Road Seat/Saddle,SE-R995,23.3722,52.64,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-914,LL Touring Seat/Saddle,SE-T312,12.0413,27.12,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-915,ML Touring Seat/Saddle,SE-T762,17.3782,39.14,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-916,HL Touring Seat/Saddle,SE-T924,23.3722,52.64,2008-03-11T10:01:36.827Z,AdventureWorksLT,Saddles,Components
+ADV-917,"LL Mountain Frame - Silver, 42",FR-M21S-42,144.5938,264.05,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-918,"LL Mountain Frame - Silver, 44",FR-M21S-44,144.5938,264.05,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-919,"LL Mountain Frame - Silver, 48",FR-M21S-48,144.5938,264.05,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-920,"LL Mountain Frame - Silver, 52",FR-M21S-52,144.5938,264.05,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-921,Mountain Tire Tube,TT-M928,1.8663,4.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-922,Road Tire Tube,TT-R982,1.4923,3.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-923,Touring Tire Tube,TT-T092,1.8663,4.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-924,"LL Mountain Frame - Black, 42",FR-M21B-42,136.785,249.79,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-925,"LL Mountain Frame - Black, 44",FR-M21B-44,136.785,249.79,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-926,"LL Mountain Frame - Black, 48",FR-M21B-48,136.785,249.79,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-927,"LL Mountain Frame - Black, 52",FR-M21B-52,136.785,249.79,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-928,LL Mountain Tire,TI-M267,9.3463,24.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-929,ML Mountain Tire,TI-M602,11.2163,29.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-930,HL Mountain Tire,TI-M823,13.09,35.0,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-931,LL Road Tire,TI-R092,8.0373,21.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-932,ML Road Tire,TI-R628,9.3463,24.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-933,HL Road Tire,TI-R982,12.1924,32.6,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-934,Touring Tire,TI-T723,10.8423,28.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Tires and Tubes,Accessories
+ADV-935,LL Mountain Pedal,PD-M282,17.9776,40.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pedals,Components
+ADV-936,ML Mountain Pedal,PD-M340,27.568,62.09,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pedals,Components
+ADV-937,HL Mountain Pedal,PD-M562,35.9596,80.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pedals,Components
+ADV-938,LL Road Pedal,PD-R347,17.9776,40.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pedals,Components
+ADV-939,ML Road Pedal,PD-R563,27.568,62.09,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pedals,Components
+ADV-940,HL Road Pedal,PD-R853,35.9596,80.99,2008-03-11T10:03:55.510Z,AdventureWorksLT,Pedals,Components
+ADV-941,Touring Pedal,PD-T852,35.9596,80.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Pedals,Components
+ADV-942,"ML Mountain Frame-W - Silver, 38",FR-M63S-38,199.3757,364.09,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-943,"LL Mountain Frame - Black, 40",FR-M21B-40,136.785,249.79,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-944,"LL Mountain Frame - Silver, 40",FR-M21S-40,144.5938,264.05,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Frames,Components
+ADV-945,Front Derailleur,FD-2342,40.6216,91.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Derailleurs,Components
+ADV-946,LL Touring Handlebars,HB-T721,20.464,46.09,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-947,HL Touring Handlebars,HB-T928,40.6571,91.57,2008-03-11T10:01:36.827Z,AdventureWorksLT,Handlebars,Components
+ADV-948,Front Brakes,FB-9873,47.286,106.5,2008-03-11T10:01:36.827Z,AdventureWorksLT,Brakes,Components
+ADV-949,LL Crankset,CS-4759,77.9176,175.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Cranksets,Components
+ADV-950,ML Crankset,CS-6583,113.8816,256.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Cranksets,Components
+ADV-951,HL Crankset,CS-9183,179.8156,404.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Cranksets,Components
+ADV-952,Chain,CH-0234,8.9866,20.24,2008-03-11T10:01:36.827Z,AdventureWorksLT,Chains,Components
+ADV-953,"Touring-2000 Blue, 60",BK-T44U-60,755.1508,1214.85,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-954,"Touring-1000 Yellow, 46",BK-T79Y-46,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-955,"Touring-1000 Yellow, 50",BK-T79Y-50,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-956,"Touring-1000 Yellow, 54",BK-T79Y-54,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-957,"Touring-1000 Yellow, 60",BK-T79Y-60,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-958,"Touring-3000 Blue, 54",BK-T18U-54,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-959,"Touring-3000 Blue, 58",BK-T18U-58,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-960,"Touring-3000 Blue, 62",BK-T18U-62,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-961,"Touring-3000 Yellow, 44",BK-T18Y-44,465.0,749.99,2025-05-15T20:41:05.247Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-962,"Touring-3000 Yellow, 50",BK-T18Y-50,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-963,"Touring-3000 Yellow, 54",BK-T18Y-54,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-964,"Touring-3000 Yellow, 58",BK-T18Y-58,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-965,"Touring-3000 Yellow, 62",BK-T18Y-62,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-966,"Touring-1000 Blue, 46",BK-T79U-46,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-967,"Touring-1000 Blue, 50",BK-T79U-50,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-968,"Touring-1000 Blue, 54",BK-T79U-54,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-969,"Touring-1000 Blue, 60",BK-T79U-60,1481.9379,2384.07,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-970,"Touring-2000 Blue, 46",BK-T44U-46,755.1508,1214.85,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-971,"Touring-2000 Blue, 50",BK-T44U-50,755.1508,1214.85,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-972,"Touring-2000 Blue, 54",BK-T44U-54,755.1508,1214.85,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-973,"Road-350-W Yellow, 40",BK-R79Y-40,1082.51,1700.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-974,"Road-350-W Yellow, 42",BK-R79Y-42,1082.51,1700.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-975,"Road-350-W Yellow, 44",BK-R79Y-44,1082.51,1700.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-976,"Road-350-W Yellow, 48",BK-R79Y-48,1082.51,1700.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-977,"Road-750 Black, 58",BK-R19B-58,343.6496,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-978,"Touring-3000 Blue, 44",BK-T18U-44,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-979,"Touring-3000 Blue, 50",BK-T18U-50,461.4448,742.35,2008-03-11T10:01:36.827Z,AdventureWorksLT,Touring Bikes,Bikes
+ADV-980,"Mountain-400-W Silver, 38",BK-M38S-38,419.7784,769.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-981,"Mountain-400-W Silver, 40",BK-M38S-40,419.7784,769.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-982,"Mountain-400-W Silver, 42",BK-M38S-42,419.7784,769.49,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-983,"Mountain-400-W Silver, 46",BK-M38S-46,419.78,769.49,2025-05-16T09:22:52.583Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-984,"Mountain-500 Silver, 40",BK-M18S-40,309.99,574.99,2025-05-16T09:40:52.117Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-985,"Mountain-500 Silver, 42",BK-M18S-42,308.2179,564.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-986,"Mountain-500 Silver, 44",BK-M18S-44,308.2179,564.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-987,"Mountain-500 Silver, 48",BK-M18S-48,308.2179,564.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-988,"Mountain-500 Silver, 52",BK-M18S-52,309.22,564.99,2025-05-16T09:45:50.177Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-989,"Mountain-500 Black, 40",BK-M18B-40,294.5797,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-990,"Mountain-500 Black, 42",BK-M18B-42,294.5797,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-991,"Mountain-500 Black, 44",BK-M18B-44,294.5797,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-992,"Mountain-500 Black, 48",BK-M18B-48,294.5797,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-993,"Mountain-500 Black, 52",BK-M18B-52,294.99,549.0,2025-05-15T16:45:58.130Z,AdventureWorksLT,Mountain Bikes,Bikes
+ADV-994,LL Bottom Bracket,BB-7421,23.9716,53.99,2025-05-15T13:31:25.740Z,AdventureWorksLT,Bottom Brackets,Components
+ADV-995,ML Bottom Bracket,BB-8107,47.95,109.99,2025-05-16T09:38:57.970Z,AdventureWorksLT,Bottom Brackets,Components
+ADV-996,HL Bottom Bracket,BB-9108,54.99,129.99,2025-05-15T16:33:25.557Z,AdventureWorksLT,Bottom Brackets,Components
+ADV-997,"Road-750 Black, 44",BK-R19B-44,343.6496,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-998,"Road-750 Black, 48",BK-R19B-48,343.6496,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+ADV-999,"Road-750 Black, 52",BK-R19B-52,343.6496,539.99,2008-03-11T10:01:36.827Z,AdventureWorksLT,Road Bikes,Bikes
+WWI-1,USB missile launcher (Green),"",25.0,39.11,2022-06-13T20:46:42.513Z,WideWorldImporters,USB Novelties,Novelties
+WWI-10,USB food flash drive - chocolate bar,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-100,"\"The Gu\" red shirt XML tag t-shirt (Black) 6XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-101,"\"The Gu\" red shirt XML tag t-shirt (Black) 7XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-102,Alien officer hoodie (Black) XL,"",35.0,52.33,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-103,Alien officer hoodie (Black) XXL,"",35.0,52.33,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-104,Alien officer hoodie (Black) 3XL,"",35.0,52.33,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-105,Alien officer hoodie (Black) 4XL,"",35.0,52.33,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-106,Alien officer hoodie (Black) 5XL,"",35.0,52.33,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-107,Superhero action jacket (Blue) 3XS,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-108,Superhero action jacket (Blue) XXS,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-109,Superhero action jacket (Blue) XS,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-11,USB food flash drive - cookie,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-110,Superhero action jacket (Blue) S,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-111,Superhero action jacket (Blue) M,"",30.0,44.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-112,Superhero action jacket (Blue) L,"",30.0,44.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-113,Superhero action jacket (Blue) XL,"",30.0,44.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-114,Superhero action jacket (Blue) XXL,"",30.0,44.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-115,Superhero action jacket (Blue) 3XL,"",34.0,50.83,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-116,Superhero action jacket (Blue) 4XL,"",34.0,50.83,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-117,Superhero action jacket (Blue) 5XL,"",34.0,50.83,2022-06-10T20:05:31.277Z,WideWorldImporters,Clothing,Clothing
+WWI-118,Dinosaur battery-powered slippers (Green) S,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-119,Dinosaur battery-powered slippers (Green) M,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-12,USB food flash drive - donut,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-120,Dinosaur battery-powered slippers (Green) L,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-121,Dinosaur battery-powered slippers (Green) XL,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-122,Ogre battery-powered slippers (Green) S,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-123,Ogre battery-powered slippers (Green) M,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-124,Ogre battery-powered slippers (Green) L,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-125,Ogre battery-powered slippers (Green) XL,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-126,Plush shark slippers (Gray) S,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-127,Plush shark slippers (Gray) M,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-128,Plush shark slippers (Gray) L,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-129,Plush shark slippers (Gray) XL,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-13,USB food flash drive - shrimp cocktail,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-130,Furry gorilla with big eyes slippers (Black) S,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-131,Furry gorilla with big eyes slippers (Black) M,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-132,Furry gorilla with big eyes slippers (Black) L,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-133,Furry gorilla with big eyes slippers (Black) XL,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-134,Animal with big feet slippers (Brown) S,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-135,Animal with big feet slippers (Brown) M,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-136,Animal with big feet slippers (Brown) L,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-137,Animal with big feet slippers (Brown) XL,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-138,Furry animal socks (Pink) S,"",5.0,7.48,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-139,Furry animal socks (Pink) M,"",5.0,7.48,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-14,USB food flash drive - fortune cookie,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-140,Furry animal socks (Pink) L,"",5.0,7.48,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-141,Furry animal socks (Pink) XL,"",5.0,7.48,2022-06-10T20:05:31.277Z,WideWorldImporters,Furry Footwear,Clothing
+WWI-142,Halloween zombie mask (Light Brown) S,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-143,Halloween zombie mask (Light Brown) M,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-144,Halloween zombie mask (Light Brown) L,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-145,Halloween zombie mask (Light Brown) XL,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-146,Halloween skull mask (Gray) S,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-147,Halloween skull mask (Gray) M,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-148,Halloween skull mask (Gray) L,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-149,Halloween skull mask (Gray) XL,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-15,USB food flash drive - dessert 10 drive variety pack,"",240.0,358.8,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-150,Pack of 12 action figures (variety),"",16.0,23.92,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-151,Pack of 12 action figures (male),"",16.0,23.92,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-152,Pack of 12 action figures (female),"",16.0,23.92,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-153,Small sized bubblewrap roll 10m,"",4.5,6.73,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-154,Medium sized bubblewrap roll 20m,"",20.0,29.9,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-155,Large sized bubblewrap roll 50m,"",24.0,35.88,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-156,10 mm Double sided bubble wrap 10m,"",15.0,22.43,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-157,10 mm Double sided bubble wrap 20m,"",30.0,44.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-158,10 mm Double sided bubble wrap 50m,"",105.0,156.98,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-159,20 mm Double sided bubble wrap 10m,"",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-16,DBA joke mug - mind if I join you? (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-160,20 mm Double sided bubble wrap 20m,"",33.0,49.34,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-161,20 mm Double sided bubble wrap 50m,"",108.0,161.46,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-162,32 mm Double sided bubble wrap 10m,"",22.0,32.89,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-163,32 mm Double sided bubble wrap 20m,"",37.0,55.32,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-164,32 mm Double sided bubble wrap 50m,"",112.0,167.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-165,10 mm Anti static bubble wrap (Blue) 10m,"",26.0,38.87,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-166,10 mm Anti static bubble wrap (Blue) 20m,"",42.0,62.79,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-167,10 mm Anti static bubble wrap (Blue) 50m,"",99.0,148.01,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-168,20 mm Anti static bubble wrap (Blue) 10m,"",29.0,43.36,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-169,20 mm Anti static bubble wrap (Blue) 20m,"",45.0,67.28,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-17,DBA joke mug - mind if I join you? (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-170,20 mm Anti static bubble wrap (Blue) 50m,"",102.0,152.49,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-171,32 mm Anti static bubble wrap (Blue) 10m,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-172,32 mm Anti static bubble wrap (Blue) 20m,"",48.0,71.76,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-173,32 mm Anti static bubble wrap (Blue) 50m,"",105.0,156.98,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-174,Bubblewrap dispenser (Black) 1.5m,"",240.0,358.8,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-175,Bubblewrap dispenser (Blue) 1.5m,"",240.0,358.8,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-176,Bubblewrap dispenser (Red) 1.5m,"",240.0,358.8,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-177,Shipping carton (Brown) 413x285x187mm,"",1.05,1.57,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-178,Shipping carton (Brown) 500x310x310mm,"",2.55,3.81,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-179,Shipping carton (Brown) 229x229x229mm,"",1.05,1.57,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-18,DBA joke mug - daaaaaa-ta (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-180,Shipping carton (Brown) 279x254x217mm,"",1.11,1.66,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-181,Shipping carton (Brown) 356x229x229mm,"",1.14,1.7,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-182,Shipping carton (Brown) 457x279x279mm,"",1.28,1.91,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-183,Shipping carton (Brown) 480x270x320mm,"",2.74,4.1,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-184,Shipping carton (Brown) 305x305x305mm,"",3.5,5.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-185,Shipping carton (Brown) 356x356x279mm,"",2.04,3.05,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-186,Shipping carton (Brown) 457x457x457mm,"",2.1,3.14,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-187,Express post box 5kg (White) 350x280x130mm,"",0.95,1.42,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-188,3 kg Courier post bag (White) 300x190x95mm,"",0.66,0.99,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-189,Clear packaging tape 48mmx75m,"",2.9,4.34,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-19,DBA joke mug - daaaaaa-ta (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-190,Clear packaging tape 48mmx100m,"",3.5,5.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-191,Black and orange fragile despatch tape 48mmx75m,"",3.7,5.53,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-192,Black and orange fragile despatch tape 48mmx100m,"",4.1,6.13,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-193,Black and orange glass with care despatch tape 48mmx75m,"",3.7,5.53,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-194,Black and orange glass with care despatch tape  48mmx100m,"",4.1,6.13,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-195,Black and orange handle with care despatch tape  48mmx75m,"",3.7,5.53,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-196,Black and orange handle with care despatch tape  48mmx100m,"",4.1,6.13,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-197,Black and orange this way up despatch tape 48mmx75m,"",3.7,5.53,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-198,Black and orange this way up despatch tape  48mmx100m,"",4.1,6.13,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-199,Black and yellow heavy despatch tape  48mmx75m,"",3.7,5.53,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-2,USB rocket launcher (Gray),"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-20,DBA joke mug - you might be a DBA if (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-200,Black and yellow heavy despatch tape 48mmx100m,"",4.1,6.13,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-201,Red and white urgent despatch tape 48mmx75m,"",3.7,5.53,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-202,Red and white urgent  heavy despatch tape  48mmx100m,"",4.1,6.13,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-203,Tape dispenser (Black),"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-204,Tape dispenser (Red),"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-205,Tape dispenser (Blue),"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-206,Permanent marker black 5mm nib (Black) 5mm,"",2.7,4.04,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-207,Permanent marker blue 5mm nib (Blue) 5mm,"",2.7,4.04,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-208,Permanent marker red 5mm nib (Red) 5mm,"",2.7,4.04,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-209,Packing knife with metal insert blade (Yellow) 9mm,"",1.89,2.83,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-21,DBA joke mug - you might be a DBA if (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-210,Packing knife with metal insert blade (Yellow) 18mm,"",2.4,3.59,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-211,Small 9mm replacement blades 9mm,"",4.1,6.13,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-212,Large  replacement blades 18mm,"",4.3,6.43,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-213,Air cushion film 200mmx100mm 325m,"",87.0,130.07,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-214,Air cushion film 200mmx200mm 325m,"",90.0,134.55,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-215,Air cushion machine (Blue),"",1899.0,2839.01,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-216,Void fill 100 L bag (White) 100L,"",12.5,18.69,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-217,Void fill 200 L bag (White) 200L,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-218,Void fill 300 L bag (White) 300L,"",37.5,56.06,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-219,Void fill 400 L bag (White) 400L,"",50.0,74.75,2022-06-10T20:05:31.277Z,WideWorldImporters,Packaging Materials,Other
+WWI-22,DBA joke mug - it depends (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-220,Novelty chilli chocolates 250g,"",8.55,12.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-221,Novelty chilli chocolates 500g,"",14.5,20.74,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-222,Chocolate beetles 250g,"",8.55,12.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-223,Chocolate echidnas 250g,"",8.55,12.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-224,Chocolate frogs 250g,"",8.55,12.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-225,Chocolate sharks 250g,"",8.55,12.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-226,White chocolate snow balls 250g,"",8.55,12.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-227,White chocolate moon rocks 250g,"",8.55,12.23,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-23,DBA joke mug - it depends (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-24,DBA joke mug - I will get you in order (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-25,DBA joke mug - I will get you in order (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-26,DBA joke mug - SELECT caffeine FROM mug (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-27,DBA joke mug - SELECT caffeine FROM mug (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-28,DBA joke mug - two types of DBAs (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-29,DBA joke mug - two types of DBAs (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-3,Office cube periscope (Black),"",18.5,27.66,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-30,Developer joke mug - Oct 31 = Dec 25 (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-31,Developer joke mug - Oct 31 = Dec 25 (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-32,Developer joke mug - that's a hardware problem (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-33,Developer joke mug - that's a hardware problem (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-34,Developer joke mug - fun was unexpected at this time (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-35,Developer joke mug - fun was unexpected at this time (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-36,Developer joke mug - when your hammer is C++ (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-37,Developer joke mug - when your hammer is C++ (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-38,Developer joke mug - inheritance is the OO way to become wealthy (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-39,Developer joke mug - inheritance is the OO way to become wealthy (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-4,USB food flash drive - sushi roll,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-40,"Developer joke mug - (hip, hip, array) (White)","",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-41,"Developer joke mug - (hip, hip, array) (Black)","",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-42,Developer joke mug - understanding recursion requires understanding recursion (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-43,Developer joke mug - understanding recursion requires understanding recursion (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-44,Developer joke mug - there are 10 types of people in the world (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-45,Developer joke mug - there are 10 types of people in the world (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-46,Developer joke mug - a foo walks into a bar (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-47,Developer joke mug - a foo walks into a bar (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-48,Developer joke mug - this code was generated by a tool (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-49,Developer joke mug - this code was generated by a tool (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-5,USB food flash drive - hamburger,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-50,Developer joke mug - old C developers never die (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-51,Developer joke mug - old C developers never die (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-52,IT joke mug - keyboard not found … press F1 to continue (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-53,IT joke mug - keyboard not found … press F1 to continue (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-54,IT joke mug - that behavior is by design (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-55,IT joke mug - that behavior is by design (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-56,IT joke mug - hardware: part of the computer that can be kicked (White),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-57,IT joke mug - hardware: part of the computer that can be kicked (Black),"",13.0,19.44,2022-06-10T20:05:31.277Z,WideWorldImporters,Novelty Items,Novelties
+WWI-58,RC toy sedan car with remote control (Black) 1/50 scale,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-59,RC toy sedan car with remote control (Red) 1/50 scale,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-6,USB food flash drive - hot dog,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-60,RC toy sedan car with remote control (Blue) 1/50 scale,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-61,RC toy sedan car with remote control (Green) 1/50 scale,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-62,RC toy sedan car with remote control (Yellow) 1/50 scale,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-63,RC toy sedan car with remote control (Pink) 1/50 scale,"",25.0,37.38,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-64,RC vintage American toy coupe with remote control (Red) 1/50 scale,"",30.0,44.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-65,RC vintage American toy coupe with remote control (Black) 1/50 scale,"",30.0,44.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-66,RC big wheel monster truck with remote control (Black) 1/50 scale,"",45.0,67.28,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-67,Ride on toy sedan car (Black) 1/12 scale,"",230.0,343.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-68,Ride on toy sedan car (Red) 1/12 scale,"",230.0,343.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-69,Ride on toy sedan car (Blue) 1/12 scale,"",230.0,343.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-7,USB food flash drive - pizza slice,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-70,Ride on toy sedan car (Green) 1/12 scale,"",230.0,343.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-71,Ride on toy sedan car (Yellow) 1/12 scale,"",230.0,343.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-72,Ride on toy sedan car (Pink) 1/12 scale,"",230.0,343.85,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-73,Ride on vintage American toy coupe (Red) 1/12 scale,"",285.0,426.08,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-74,Ride on vintage American toy coupe (Black) 1/12 scale,"",285.0,426.08,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-75,Ride on big wheel monster truck (Black) 1/12 scale,"",345.0,515.78,2022-06-10T20:05:31.277Z,WideWorldImporters,Toys,Toys
+WWI-76,"\"The Gu\" red shirt XML tag t-shirt (White) 3XS","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-77,"\"The Gu\" red shirt XML tag t-shirt (White) XXS","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-78,"\"The Gu\" red shirt XML tag t-shirt (White) XS","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-79,"\"The Gu\" red shirt XML tag t-shirt (White) S","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-8,USB food flash drive - dim sum 10 drive variety pack,"",240.0,358.8,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-80,"\"The Gu\" red shirt XML tag t-shirt (White) M","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-81,"\"The Gu\" red shirt XML tag t-shirt (White) L","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-82,"\"The Gu\" red shirt XML tag t-shirt (White) XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-83,"\"The Gu\" red shirt XML tag t-shirt (White) XXL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-84,"\"The Gu\" red shirt XML tag t-shirt (White) 3XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-85,"\"The Gu\" red shirt XML tag t-shirt (White) 4XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-86,"\"The Gu\" red shirt XML tag t-shirt (White) 5XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-87,"\"The Gu\" red shirt XML tag t-shirt (White) 6XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-88,"\"The Gu\" red shirt XML tag t-shirt (White) 7XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-89,"\"The Gu\" red shirt XML tag t-shirt (Black) 3XS","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-9,USB food flash drive - banana,"",32.0,47.84,2022-06-10T20:05:31.277Z,WideWorldImporters,USB Novelties,Novelties
+WWI-90,"\"The Gu\" red shirt XML tag t-shirt (Black) XXS","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-91,"\"The Gu\" red shirt XML tag t-shirt (Black) XS","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-92,"\"The Gu\" red shirt XML tag t-shirt (Black) S","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-93,"\"The Gu\" red shirt XML tag t-shirt (Black) M","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-94,"\"The Gu\" red shirt XML tag t-shirt (Black) L","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-95,"\"The Gu\" red shirt XML tag t-shirt (Black) XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-96,"\"The Gu\" red shirt XML tag t-shirt (Black) XXL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-97,"\"The Gu\" red shirt XML tag t-shirt (Black) 3XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-98,"\"The Gu\" red shirt XML tag t-shirt (Black) 4XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
+WWI-99,"\"The Gu\" red shirt XML tag t-shirt (Black) 5XL","",18.0,26.91,2022-06-10T20:05:31.277Z,WideWorldImporters,T-Shirts,Clothing
