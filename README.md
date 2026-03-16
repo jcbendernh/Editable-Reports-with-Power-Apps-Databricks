@@ -109,3 +109,11 @@ The Product data resides in a Delta table that is then served to both Power BI a
 11. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes in Power Query and return to the report.  When finished, the report should look like the following:
     ![PowerBIDesktop](./img/PowerBIDesktop.png)
 
+12. Publish the Report to a Fabric/Power BI Workspace.
+
+13. Within your Fabric/Power BI Workspace, verify your credentials on the your **Editable-Products-Databricks** semantic model by going under **Settings** and then **Data source credentials** and **Edit credentials** and verify the following settings and click **Sign in**:<BR>
+    |Field | Value |  
+    |----------|----------|
+    | Authentication Type: | OAuth2 |
+    | Report views can only access...: | Checked | 
+
