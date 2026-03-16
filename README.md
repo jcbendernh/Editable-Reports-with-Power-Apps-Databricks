@@ -156,5 +156,16 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 
 24. Insert an Edit Form on Screen1 of the Canvas app by select **+ Insert** in the toolbar and then select **Edit Form** and select our new Azure Databricks data source.
 
-25. Let resize Form1 so that it slightly overlaps the gallery. For positioning, I gave it a **Y value** of **75**.  When finished, it should look like the screen below.
+25. Let resize **Form1** so that it slightly overlaps the gallery. For positioning, I gave it a **Y value** of **75**.  When finished, it should look like the screen below.
      ![PowerAppsForm1](./img/PowerAppsForm1.png)
+
+26.  Select **Choose the fields you want to add...** control and add the following fields in the **exact order**:
+    a. ProductName - Edit text<BR>
+    b. ProductNumber - Edit text<BR>
+    c. UnitPrice - Edit number<BR>
+    d. RetailPrice - Edit number<BR>
+    e. ParentCategory - Edit text<BR>
+    f. Category - Edit text<BR>
+
+27. Next expand Form1 to a **Height** of **870**.  When finished, it should look like: 
+     ![PowerAppsForm1Height](./img/PowerAppsForm1Height.png)
