@@ -170,7 +170,7 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 27. Next expand Form1 to a **Height** of **870**.  When finished, it should look like: 
      ![PowerAppsForm1Height](./img/PowerAppsForm1Height.png)
 
-28. Next we need to tie the Gallery1 control to the Form1 control.  To do so, lets modify the following values on the **Advanced tab** of **Gallery1**. <br>
+28. Next we need to tie the **Gallery1** control to the **Form1** control.  To do so, lets modify the following values on the **Advanced tab** of **Gallery1**. <br>
     a. OnSelect<BR>
     ```javascript
     Navigate(Form1, ScreenTransition.None)
@@ -178,8 +178,53 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 
     b. Items  
     ```javascript
-    LookUp('(schema).products', ProductID=First('PowerBIIntegration'.Data).ProductID)
+    LookUp('schema.products', ProductID=First('PowerBIIntegration'.Data).ProductID)
     ```
         
     For example, I used<br>
     LookUp('golddb.products', ProductID=First('PowerBIIntegration'.Data).ProductID)<br>
+
+29. Modify the **Item** value on the **Advanced** tab of **Form1**.
+    ```javascript
+    Gallery1.Selected
+    ```
+    Once this is set, you should start to see values populate in your fields that correspond to the record highlighted.
+     ![PowerAppsForm1Values](./img/PowerAppsForm1Values.png)
+
+30. Lets Save our Power App to ensure we don't lose changes.  Click the **Save** button in the upper right ofo the toolbar and give it a title of **PowerBI-Databricks-Edit**.
+
+31. In the left Navigation bar, double click Title1 under Gallery1 and rename it to
+    ```javascript
+    ProductIDLookup
+    ```
+    Also delete the **NextArrow1** control by Right clicking on it and selecting Delete.  When finished your Gallery1 items should look like
+    ![PowerAppsGallery1](./img/PowerAppsGallery1.png)
+
+32. Now we need to update all the edit fields in the DataCard1 sections of Form1.  
+    a. Expand **ProductName_DataCard1** section and change **DataCardValue1** value to 
+    ```javascript
+    edtProductName
+    ```
+    Do the same for the following fields:<br>&nbsp;<br>
+    b. ProductNumber_DataCard1 - DataCardValue...
+    ```javascript
+    edtProductNumber
+    ```
+    c. UnitPrice_DataCard1 - DataCardValue...
+    ```javascript
+    edtUnitPrice
+    ```
+    d. RetailPrice_DataCard1 - DataCardValue...
+    ```javascript
+    edtRetailPrice
+    ```
+    e. ParentCategory_DataCard1 - DataCardValue...
+    ```javascript
+    edtParentCategory
+    ```
+    f. Category_DataCard1 - DataCardValue...
+    ```javascript
+    edtCategory
+    ```
+    When finished, your screen should look similar to:
+    ![PowerAppsFormedtValues](./img/PowerAppsFormedtValues.png)
