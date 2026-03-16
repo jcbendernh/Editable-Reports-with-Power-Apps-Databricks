@@ -287,8 +287,8 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
     PowerBIIntegration.Refresh()
     ```
 
-**IMPORTANT:** The order of fields in this formula above must exactly match the order of the fields in the **Parameters** tab of the **When Power Apps calls a flow (V2)** step of the **UpdateDatabricksGoldProducts** Cloud Flow.  Thus, if you change anything in these instructions you will need to make sure these orders match.
-    ![WhenPowerAppscallsaflow](./img/WhenPowerAppscallsaflow.png)
+    **IMPORTANT:** The order of fields in this formula above must exactly match the order of the fields in the **Parameters** tab of the **When Power Apps calls a flow (V2)** step of the **UpdateDatabricksGoldProducts** Cloud Flow.  Thus, if you change anything in these instructions you will need to make sure these orders match.
+        ![WhenPowerAppscallsaflow](./img/WhenPowerAppscallsaflow.png)
 
 37. Edits are complete, **save the Power App** and then click **Publish** and select the **Publish this Version** on the pop-up screen.
 
