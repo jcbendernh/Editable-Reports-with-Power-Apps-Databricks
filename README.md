@@ -169,3 +169,17 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 
 27. Next expand Form1 to a **Height** of **870**.  When finished, it should look like: 
      ![PowerAppsForm1Height](./img/PowerAppsForm1Height.png)
+
+28. Next we need to tie the Gallery1 control to the Form1 control.  To do so, lets modify the following values on the **Advanced tab** of **Gallery1**. <br>
+    a. OnSelect<BR>
+    ```javascript
+    Navigate(Form1, ScreenTransition.None)
+    ```
+
+    b. Items  
+    ```javascript
+    LookUp('(schema).products', ProductID=F<irst('PowerBIIntegration'.Data).ProductID)
+    ```
+        
+    For example, I used<br>
+    LookUp('golddb.products', ProductID=First('PowerBIIntegration'.Data).ProductID)<br>
