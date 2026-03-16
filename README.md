@@ -304,4 +304,4 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 Set(varUpdateMessage, Blank());
 ```
 
-** Congratulations!  You have completed this tutorial **
+**Congratulations!  You have completed this tutorial**
