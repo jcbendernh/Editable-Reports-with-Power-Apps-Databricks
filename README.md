@@ -273,8 +273,8 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
                 edtProductNumber.Text,
                 Value(edtUnitPrice.Text, "en-US"),
                 Value(edtRetailPrice.Text, "en-US"),
-                edtParentCategory.Text,
-                edtCategory.Text
+                edtCategory.Text,
+                edtParentCategory.Text
             )
         );
 
@@ -286,3 +286,6 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
     );
     PowerBIIntegration.Refresh()
     ```
+
+**IMPORTANT:** The order of fields in this formula above must exactly match the order of the fields in the **Parameters** tab of the **When Power Apps calls a flow (V2)** step of the **UpdateDatabricksGoldProducts** Cloud Flow.  Thus, if you change anything in these instructions you will need to make sure these orders match.
+    ![WhenPowerAppscallsaflow](./img/WhenPowerAppscallsaflow.png)
