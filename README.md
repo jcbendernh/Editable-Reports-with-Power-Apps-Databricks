@@ -95,12 +95,17 @@ The Product data resides in a Delta table that is then served to both Power BI a
 
 ### Power BI
 7.  Download the [`Editable-Products-Databricks.pbix`](src/Editable-Products-Databricks.pbix) file to your local machine and open it with the Power BI Desktop.
+
 8.  Once the report opens, click on **Transform Data** in the toolbar to open the Power Query Editor.  
+
 9.  Within the Power Query editor, double click on the **Source** option under **Applied Steps** to modify our Databricks connection values. 
+
 10.  Change the following values to match your environment.<BR>
     a. Server Hostname - **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.<BR>
     b. HTTP Path - **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse.<BR>
     c. Default Catalog (Optional)<BR>
     d. Native query **schema** and **catalog** values in the select statement. <BR>
 
-11. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes. 
+11. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes in Power Query and return to the report.  When finished, the report should look like the following:
+    ![PowerBIDesktop](./img/PowerBIDesktop.png)
+
