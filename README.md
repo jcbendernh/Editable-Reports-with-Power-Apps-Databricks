@@ -6,7 +6,7 @@ A few years ago I documented the step of how to do this with an Azure SQL databa
 
 For this example, I am using the golddb.Products delta table within an Azure Databricks Unity Catalog.  
 
-## What is contained in the src folder of this repo.
+## src Folder Contents.
 - **products.csv** 
     - This contains the data we will use to upload to an Azure Databricks Volume within Unity Catalog and then create a delta table from that volume.
 - **Databricks Flow and Apps Power Automate Solution file**
@@ -16,6 +16,14 @@ For this example, I am using the golddb.Products delta table within an Azure Dat
     - Databricks Connection
 - **Editable-Products-Databricks.pbix**
     - This is the Power BI Report we will publish to the service and add the Power App to.
+
+## Architectural Overview
+![Architecture diagram](img/architecture.png)
+
+
+
+
+
 
 
 
