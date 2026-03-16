@@ -20,6 +20,23 @@ For this example, I am using the golddb.Products delta table within an Azure Dat
 ## Architectural Overview
 ![Architecture diagram](img/architecture.png)
 
+### Databricks
+The Product data resides in a Delta table that is then served to both Power BI and the Power App and is updated via the Power Automate Cloud Flow.
+
+### Power BI
+- This reads the Product Delta table from Databricks via Direct Query
+- A Power App is embedded in the report and we use the **PowerBIIntegration** function to filter the records within the Power App.
+
+### Power App
+- It is embedded within the Power BI Report via the web service / browser
+- This reads the Product Delta table from Databricks via the Azure Databricks Connection Power Platform connector.
+- Data is filtered to the selected row highlighted in the Poweer BI Report via the **PowerBIIntegration** function.
+- The Product Delta table in Databricks is updated via a Power Automate Cloud Flow.
+
+### Power Automate Cloud Flow
+- Activated from the Power App
+- Updates the Product Delta table in Databricks.
+
 
 
 
