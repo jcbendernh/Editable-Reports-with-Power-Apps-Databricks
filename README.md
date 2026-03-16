@@ -38,9 +38,47 @@ The Product data resides in a Delta table that is then served to both Power BI a
 - Updates the Product Delta table in Databricks.
 
 
+## Instructions
 
+### Databricks
 
+1. Upload the ![products.csv](src/products.csv) to a volume within your Databricks Unity Catalog.  For instructions on how to do so, check out [Upload files to a Unity Catalog volume](https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-to-volume).
+2. Create a Python based notebook in your Databricks workspace and paste the following cells to read the products.csv and write the data to a new delta table in your Databricks catalog. <BR>
+    ```python
+    df = spark.read.option("header", "true").option("inferSchema", "true").csv("/Volumes/<catalog>/<schema>/products/products.csv")
+    display(df)
+    ```
+    Replace <catalog> and <schema> with you catalog and schema.<br>
 
+    ```python
+    df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable("<catalog>.<schema>.products")
+    ```
+3. We need to make the ProductID field a non nullable primary key for the integration to work in this scenario.  To do so, paste the following cells into the notebook and run them.
+    ```python
+    %sql
+    ALTER TABLE <catalog>.<schema>.products 
+    ALTER COLUMN ProductID SET NOT NULL
+    ```
+    &nbsp;
+    ```python
+    %sql
+    ALTER TABLE <catalog>.<schema>.products 
+    ADD CONSTRAINT products_pk PRIMARY KEY (ProductID)
+    ```
+
+**NOTE:** Please remember your values for <catalog>.<schema>.products as we will use these later on for Power BI, Power Apps and Power Automate.
+
+### Power Automate Setup
+
+4. Import the ![DatabricksFlowsandApp](src/DatabricksFlowsandApp_1_0_0_2.zip)solution file into your Power Platform environment via Solutions in Power Automate.  For instructions on how to do so, check out [Import a solution](https://learn.microsoft.com/en-us/power-automate/import-flow-solution).
+
+5. During the import process, you will need to update the Databricks Connection Reference under **+ New Connection**.  On the Connect to Azure Databricks screen, set the following properties and click Create.
+
+    |Field | Value |  
+    |----------|----------|
+    | Authentication Type: | OAuth Connection |
+    | Server Hostname: | **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.| 
+    | HTTP Path: | **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse|  
 
 
 
