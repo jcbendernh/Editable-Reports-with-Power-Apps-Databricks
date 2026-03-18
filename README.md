@@ -96,7 +96,7 @@ The Product data resides in a Delta table that is then served to both Power BI a
 
 **NOTE:** Please remember your values for (catalog).(schema).products as we will use these later on.
 
-### Power Automate Setup
+### Solution File Import
 
 5. Import the [`DatabricksFlowsandApp`](src/DatabricksFlowsandApp_1_0_0_5.zip) solution file into your Power Platform environment via **Solutions** in [Power Automate](https://make.powerautomate.com/).  For instructions on how to do so, check out [Import a solution](https://learn.microsoft.com/en-us/power-automate/import-flow-solution).
 
