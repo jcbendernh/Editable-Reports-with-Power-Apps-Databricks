@@ -152,39 +152,52 @@ The Product data resides in a Delta table that is then served to both Power BI a
 
 Showtime!  Now we will start to configure the Power App <-> Power BI Integration.
 
-15. With the **Editable-Products-Databricks** report open in Fabric Portal, click the **Edit** which will open the Filters, Visualizations and Data panes to the right.
+16. With the **Editable-Products-Databricks** report open in Fabric Portal, click the **Edit** which will open the Filters, Visualizations and Data panes to the right.
 
-16. Select the **Power App for Power BI** control under the **Visualizations** pane to add it to the canvas of the report.
+17. Select the **Power App for Power BI** control under the **Visualizations** pane to add it to the canvas of the report.
      ![Visualizations](./img/Visualizations.png)
 
-17. Resize the Power App control so that it takes up the right section of the report.
+18. Resize the Power App control so that it takes up the right section of the report.
 
-18. Next add the **ProductID** field (primary key) from the Data pane to the **PowerApps Data** control in the Visualization pane. This will change the appearance of the Power App control in the canvas and click the **Create New** button and then accept any popups to get you to the Power Apps Studio in a web browser.
-     ![PowerAppsCreateNew](./img/PowerAppsCreateNew.png)
+19. Next add the following fields to the **PowerApps Data** control in the Visualization Pane as they will be displayed in the Power App and sent through the Power Automate Cloud Flow to update the Databricks Delta table.<br>
+    a. ProductID<br>
+    b. ProductName<br>
+    c. ProductNumber<br>
+    d. UnitPrice - Change to don't summarize<br>
+    e. RetailPrice - Change to don't summarize<br>
+    f. ParentCategory<br>
+    g. Category<br>
+     
+    ![PowerAppsData](./img/PowerAppsData.png)
 
-19.  Once in the Power Apps studio, it will create the form for you with a Gallery control listing all the ProductIDs. If you are not a Power Apps expert, it could get complicate quickly.  Thus, to keep it simple for these instructions, we will utilize a Form control and then embed the fields in the form along with a submit button to get our changes to post to Azure Databricks via the Power Automate Cloud Flow.
 
-20.  Resize the **Gallery1** control on your **Screen1** in the Power App to only take up the heading of the screen. I resized it to the Height of 129 pixels.
-     ![GalleryHeight](./img/GalleryHeight.png)
+20. This will change the appearance of the Power App control in the canvas and click the **Choose App** button and then accept any popups to get you to the Power Apps Studio in a web browser.
+     ![PowerAppsChooseApp](./img/PowerAppsChooseApp.png)
 
-21. We will need to add an Azure Databricks connection to our data source so that the Power App can display the fields from Azure Databricks as necessary. It is important to understand this connection is independent of the Power BI datasource you created earlier. Later on we will tie the two together via a Power BI specific command.<BR>In the left navigation bar click on *Data* and then click the **Add data** button. and select **Azure Databricks** under **Connectors**.<br>
-     ![PowerAppsAddData](./img/PowerAppsAddData.png)
+21. Select **Power BI - Databricks Form** from the listing and click **Add**.
 
-22. Under the Azure Databricks connection, set the following fields and click **Connect**.
+22. At the next screen, click **Go to Power Apps Studio**.  It will open up a new tab with the Power App available.
 
-    |Field | Value |  
-    |----------|----------|
-    | Authentication Type: | OAuth Connection |
-    | Server Hostname: | **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.| 
-    | HTTP Path: | **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse| 
+23. Within the Power App window, click **Skip** at the Welcome to Power App Studio window to get to the App canvas.
 
-23. Under the choose a dataset control, select the Catalog  and then **(schema).Products** table and click **Connect**.  When finished your screen should look like the following.
-     ![PowerAppsDataProducts](./img/PowerAppsDataProducts.png)
+24. We need to save the Power App to capture the new fields come through via the PowerBIIntegration. You will notice the save button is greyed out.  Highlight the Update Product button and **move it to enable the Save button**.  Click **Save** and then click **Publish**.  You can close out the Power Apps tab.
+    ![PowerAppsSave](./img/PowerAppsSave.png)
 
-24. Insert an Edit Form on Screen1 of the Canvas app by select **+ Insert** in the toolbar and then select **Edit Form** and select our new Azure Databricks data source.
+25.  Return to the Power BI interface and close **Save** in the toolbar and then click **Reading View**. 
+    ![PowerBISave](./img/PowerBISave.png)
 
-25. Let resize **Form1** so that it slightly overlaps the gallery. For positioning, I gave it a **Y value** of **75**.  When finished, it should look like the screen below.
-     ![PowerAppsForm1](./img/PowerAppsForm1.png)
+26.  You will now need to refresh the report via the Browser refresh for the new changes to take effect.  Click on a row in the table and the fields should populate in the Power App. 
+    ![PowerBIApp](./img/PowerBIApp.png)
+
+**Congratulations!  You have completed this tutorial**
+
+## Appendix
+
+### Power App Overview
+
+### Power Automate Overview
+
+27.  **Change a value** in the Power App and click the **Update Product Info** button.  The Power App will show display an **Update Succeeded** message and then refresh the report with the new value. 
 
 26.  Select **Choose the fields you want to add...** control and add the following fields in the **exact order**:
     a. ProductName - Edit text<BR>
