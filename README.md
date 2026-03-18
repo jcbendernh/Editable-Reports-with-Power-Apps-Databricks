@@ -100,7 +100,7 @@ The Product data resides in a Delta table that is then served to both Power BI a
 
 5. Import the [`DatabricksFlowsandApp`](src/DatabricksFlowsandApp_1_0_0_5.zip) solution file into your Power Platform environment via **Solutions** in [Power Automate](https://make.powerautomate.com/).  For instructions on how to do so, check out [Import a solution](https://learn.microsoft.com/en-us/power-automate/import-flow-solution).
 
-6. During the import process, you will need to update the Databricks Connection Reference under **+ New Connection**.  On the Connect to Azure Databricks screen, set the following properties and click Create.
+6. During the import process, you will need to update the Databricks Connection Reference under **Connections** and **Create new connection**.  On the **Connect to Azure Databricks** screen, set the following properties and click **Create**.
 
     |Field | Value |  
     |----------|----------|
@@ -108,36 +108,37 @@ The Product data resides in a Delta table that is then served to both Power BI a
     | Server Hostname: | **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.| 
     | HTTP Path: | **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse| 
 
-6.  Once the solution is imported, we will need to change a few values on both the 
-**ReadDatabricksGoldProducts** and 
-**UpdateDatabricksGoldProducts** Cloud Flows.  Open each Cloud Flow within Power Automate and click **Edit** in the toolbar and change the following values in the Execute a SQL Statement item on the canvas.<BR>
-    a. Body/warehouse_id - change the SQL Warehouse ID to reflect your enviroment.  This can be found on the **Overview** tab of the Databricks SQL Warehouse.| <BR>
-    b. Body/statement - change the Databricks catalog and schema in the update statement to reflect your enviroment.<BR>
-    c. Body/catalog - change the Databricks catalog value to reflect your enviroment.<BR>
-    d. Body/schema - change the Databricks schema value to reflect your enviroment.<BR>
+7.  On the next screen, you will need to update 3 environmental variables.  These are used in the **UpdateDatabricksGoldProducts - Cloud Flow**.  Set the following properties and click **Import**.
+    |Environmental Variable | Value |  
+    |----------|----------|
+    | dbxproductcatalog | The name of the Databricks **catalog** where the Product table resides |
+    | dbxproductwarehouse_id | This can be found on the **Overview** tab of the SQL Warehouse within the Databricks Workspace | 
+    | dbxproductschema | The name of the Databricks **schema** where the Product table resides | 
 
-    ![Power Automate-Execute SQL](./img/PowerAutomate-ExecuteSQL.png)
-    
+    NOTE:  This import is not instantaneous.  You will probably have to wait a few minutes for the following for it to show in the listing.  Once completed, you should see a screen like below.
+
+    ![SolutionImport](./img/SolutionImport.png)
+ 
 
 ### Power BI Setup
-7.  Download the [`Editable-Products-Databricks.pbix`](src/Editable-Products-Databricks.pbix) file to your local machine and open it with the Power BI Desktop.
+8.  Download the [`Editable-Products-Databricks.pbix`](src/Editable-Products-Databricks.pbix) file to your local machine and open it with the Power BI Desktop.
 
-8.  Once the report opens, click on **Transform Data** in the toolbar to open the Power Query Editor.  
+9.  Once the report opens, click on **Transform Data** in the toolbar to open the Power Query Editor.  
 
-9.  Within the Power Query editor, double click on the **Source** option under **Applied Steps** to modify our Databricks connection values. 
+10.  Within the Power Query editor, double click on the **Source** option under **Applied Steps** to modify our Databricks connection values. 
 
-10.  Change the following values to match your environment.<BR>
+11.  Change the following values to match your environment.<BR>
     a. Server Hostname - **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.<BR>
     b. HTTP Path - **HTTP path** value on **Connection details** tab of the Databricks SQL Warehouse.<BR>
-    c. Default Catalog (Optional)<BR>
+    c. Default Catalog (Optional).  *It says optional, but it is not.*<BR>
     d. Native query **schema** and **catalog** values in the select statement. <BR>
 
-11. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes in Power Query and return to the report.  When finished, the report should look like the following:<BR>
+12. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes in Power Query and return to the report.  When finished, the report should look like the following:<BR>
     ![PowerBIDesktop](./img/PowerBIDesktop.png)
 
-12. Publish the Report to a Fabric/Power BI Workspace.
+13. Publish the Report to a Fabric/Power BI Workspace.
 
-13. Within your Fabric/Power BI Workspace, verify your credentials on the your **Editable-Products-Databricks** semantic model by going under **Settings** and then **Data source credentials** and **Edit credentials** and verify the following settings and click **Sign in**:<BR>
+14. Within your Fabric/Power BI Workspace, verify your credentials on the your **Editable-Products-Databricks** semantic model by going under **Settings** and then **Data source credentials** and **Edit credentials** and verify the following settings and click **Sign in**:<BR>
     |Field | Value |  
     |----------|----------|
     | Authentication Type: | OAuth2 |
@@ -145,9 +146,9 @@ The Product data resides in a Delta table that is then served to both Power BI a
 
     ![ConfigureSemanticModel](./img/ConfigureSemanticModel.png)
 
-14. Go the **Editable-Products-Databricks** report in the workspace and verify that you can see the data in the report.
+15. Go to the **Editable-Products-Databricks** report in the workspace and verify that you can see the data in the report.
 
-### Power App Setup
+### PowerBIIntegration Configuration
 
 Showtime!  Now we will start to configure the Power App <-> Power BI Integration.
 
