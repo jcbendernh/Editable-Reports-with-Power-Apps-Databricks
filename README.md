@@ -34,35 +34,33 @@ The Product data resides in a Delta table that is then served to both Power BI a
 - **Power Bi - Power App - Databricks Solution file**
     - **Products - Databricks Canvas App** - This is the Power Apps Canvas app that will be inserted into the Power BI Report.  It reads data from Power BI via [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) and updates the existing data via the UpdateDatabricksGoldProducts - Cloud Flow.
     - **UpdateDatabricksGoldProducts - Cloud Flow** - This utilizes the [Execute SQL Commands](https://learn.microsoft.com/en-us/connectors/databricks/#execute-a-sql-statement) to update the data in the Azure Databricks Delta table from the values captured on the Power Apps form.
-    - Databricks Connection Reference
-    - dbxproductwarehouse_id Environmental Variable - This is the Warehouse ID reference to the Serverless SQL compute in Databricks.
-    - dbxproductwarehouse_id Environmental Variable - This is the Warehouse ID reference to the Serverless SQL compute in Databricks.
-    - dbxproductcatalog Environmental Variable - This is the reference to the Databricks catalog of the products table.
-    - dbxproductschema Environmental Variable - This is the reference to the Databricks schema of the products table.
+    - **Databricks** Connection Reference - This is the Authentication Type, Server Hostname. and HTTP Path setting to connect to the Databricks environment.
+    - **dbxproductwarehouse_id** Environmental Variable - This is the Warehouse ID reference to the Serverless SQL compute in Databricks.
+    - **dbxproductcatalog** Environmental Variable - This is the reference to the Databricks catalog of the products table.
+    - **dbxproductschema** Environmental Variable - This is the reference to the Databricks schema of the products table.
 - **Editable-Products-Databricks.pbix**
     - This is the Power BI Report we will publish to the service and add the Power App to.
-
-
-
 
 ## Instructions
 
 ### Databricks
 
-**IMPORTANT:** Please use/setup a serverless SQL Warehouse so that the startup time is in seconds and not minutes.  If you use a traditional SQL Warehouse, the Power Automate Cloud Flow will time out if the SQL warehouse is not started.  To create one, follow these instructions: [Create a SQL warehouse](https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/create?source=recommendations)
+**IMPORTANT:** Please utilize a serverless SQL Warehouse so that the startup time is in seconds and not minutes.  If you use a traditional SQL Warehouse, the Power Automate Cloud Flow will time out if the SQL warehouse is not started.  To create one, follow these instructions: [Create a SQL warehouse](https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/create?source=recommendations)
 
 1. Upload the [`products.csv`](./src/products.csv) to a volume within your Databricks Unity Catalog.  For instructions on how to do so, check out [Upload files to a Unity Catalog volume](https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-to-volume).
-2. Create a Python based notebook in your Databricks workspace and paste the following cells to read the products.csv and write the data to a new delta table in your Databricks catalog. <BR>
+2. Create a Python notebook in your Databricks workspace and paste the following cells to read the products.csv and write the data to a new delta table in your Databricks catalog. <BR>
     ```python
     df = spark.read.option("header", "true").option("inferSchema", "true").csv("/Volumes/(catalog)/(schema)/products/products.csv")
     display(df)
     ```
-    Replace (catalog) and (schema) with you catalog and schema.<br>
+    Replace (catalog) and (schema) with you catalog and schema values.<br>
 
     ```python
     df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable("(catalog).(schema).products")
     ```
-3. We need to make the ProductID field a non nullable primary key for the integration to work in this scenario.  To do so, paste the following cells into the notebook and run them.
+    Replace (catalog) and (schema) with you catalog and schema values.<br>
+
+3. We need to make the ProductID field a non nullable primary key for the integration to work without errors.  To do so, paste the following cells into the notebook and run them.
     ```python
     %sql
     ALTER TABLE (catalog).(schema).products 
@@ -75,13 +73,32 @@ The Product data resides in a Delta table that is then served to both Power BI a
     ADD CONSTRAINT products_pk PRIMARY KEY (ProductID)
     ```
 
-**NOTE:** Please remember your values for (catalog).(schema).products as we will use these later on for Power BI, Power Apps and Power Automate.
+4. For our select statement that will be utilized by the Power BI report, we need to convert the timestamp field to a date field in the select statement as the Power BI report has issues with the Power Apps integration when Databricks timestamps with UTC offset are utilized. Thus, our SQL query will look like the following.
+
+    ```sql
+    select 
+        ProductID,
+        ProductName,
+        ProductNumber,
+        UnitPrice,
+        RetailPrice,
+        date(ModifiedDate) as ModifiedDate,
+        Source,
+        Category,
+        ParentCategory
+    from (catalog).(schema).products
+    order by ProductID asc
+    ```
+
+**IMPORTANT:** All timestamp fields **must either be removed from the table listing in the Power BI report or converted to Date fields** if they need to be listed in the report.
+
+**NOTE:** Please remember your values for (catalog).(schema).products as we will use these later on.
 
 ### Power Automate Setup
 
-4. Import the [`DatabricksFlowsandApp`](src/DatabricksFlowsandApp_1_0_0_3.zip) solution file into your Power Platform environment via Solutions in Power Automate.  For instructions on how to do so, check out [Import a solution](https://learn.microsoft.com/en-us/power-automate/import-flow-solution).
+5. Import the [`DatabricksFlowsandApp`](src/DatabricksFlowsandApp_1_0_0_5.zip) solution file into your Power Platform environment via **Solutions** in [Power Automate](https://make.powerautomate.com/).  For instructions on how to do so, check out [Import a solution](https://learn.microsoft.com/en-us/power-automate/import-flow-solution).
 
-5. During the import process, you will need to update the Databricks Connection Reference under **+ New Connection**.  On the Connect to Azure Databricks screen, set the following properties and click Create.
+6. During the import process, you will need to update the Databricks Connection Reference under **+ New Connection**.  On the Connect to Azure Databricks screen, set the following properties and click Create.
 
     |Field | Value |  
     |----------|----------|
