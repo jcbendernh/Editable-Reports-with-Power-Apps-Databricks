@@ -92,7 +92,7 @@ The Product data resides in a Delta table that is then served to both Power BI a
     order by ProductID asc
     ```
 
-**IMPORTANT:** All timestamp fields **must either be removed from the table listing in the Power BI report or converted to Date fields** if they need to be listed in the report.
+**IMPORTANT:** All timestamp fields **must either be removed from the table listing in the Power BI report or converted to Date fields** if they need to be listed in the report.  Otherwise the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) functionality will produce errors.
 
 **NOTE:** Please remember your values for (catalog).(schema).products as we will use these later on.
 
