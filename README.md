@@ -31,11 +31,14 @@ The Product data resides in a Delta table that is then served to both Power BI a
 ## src folder contents
 - **products.csv** 
     - This contains the data we will use to upload to an Azure Databricks Volume within Unity Catalog and then create a delta table from that volume.
-- **Databricks Flow and Apps Power Automate Solution file**
-    - **Products - Databricks Canvas App** - This is used for exploratory purposes to understand how the Cloud Flows operate using the [Execute SQL Commands](https://learn.microsoft.com/en-us/connectors/databricks/#execute-a-sql-statement). This is not used in the report and I left it in the solution in case you want to explore this functionality further.
-    - **ReadDatabricksGoldProducts - Cloud Flow** - This utilizes the Execute SQL Command to read data from an Azure Databricks Delta table via a serverless SQL Warehouse compute.This is not used in the report. This is not used in the report and I left it in the solution in case you want to explore this functionality further.
-    - **UpdateDatabricksGoldProducts - Cloud Flow** - This utilizes the Execute SQL Command to update data to back into the Azure Databricks Delta table from the values captured on the form.<BR>**This is utilized in the report**
-    - Databricks Connection
+- **Power Bi - Power App - Databricks Solution file**
+    - **Products - Databricks Canvas App** - This is the Power Apps Canvas app that will be inserted into the Power BI Report.  It reads data from Power BI via [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) and updates the existing data via the UpdateDatabricksGoldProducts - Cloud Flow.
+    - **UpdateDatabricksGoldProducts - Cloud Flow** - This utilizes the [Execute SQL Commands](https://learn.microsoft.com/en-us/connectors/databricks/#execute-a-sql-statement) to update the data in the Azure Databricks Delta table from the values captured on the Power Apps form.
+    - Databricks Connection Reference
+    - dbxproductwarehouse_id Environmental Variable - This is the Warehouse ID reference to the Serverless SQL compute in Databricks.
+    - dbxproductwarehouse_id Environmental Variable - This is the Warehouse ID reference to the Serverless SQL compute in Databricks.
+    - dbxproductcatalog Environmental Variable - This is the reference to the Databricks catalog of the products table.
+    - dbxproductschema Environmental Variable - This is the reference to the Databricks schema of the products table.
 - **Editable-Products-Databricks.pbix**
     - This is the Power BI Report we will publish to the service and add the Power App to.
 
