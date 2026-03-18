@@ -1,12 +1,34 @@
 # Editable-Reports-with-Power-Apps-Databricks
-This is an instructional repository of how to enable the ability to edit data in Azure Databricks Delta tables via an embedded Power App via a Power Automate Cloud Flow, all from within a Power BI report that uses Direct Query against a Databricks Serverless SQL compute engine.  
+This is a repository that showcases how to enable the editing of data in Azure Databricks Delta tables via an embedded Power App within a Power BI.  
 
 ## Introduction
-A few years ago I documented the step of how to do this with an Azure SQL database at [Editable-Reports-with-Power-Apps](https://github.com/jcbendernh/Editable-Reports-with-Power-Apps/edit/main/README.md).  Given the new functionality released within the Power Platform with reagrds to Azure Databricks Connectors, you can now do the same with an Azure Databricks environment.
+A few years ago I documented the step of how to do this with an Azure SQL database at [Editable-Reports-with-Power-Apps](https://github.com/jcbendernh/Editable-Reports-with-Power-Apps/edit/main/README.md).  With the recent Azure Databricks connector enhancements in Power Platform, you can now achieve the same result in an Azure Databricks environment.
 
-For this example, I am using the golddb.Products delta table within an Azure Databricks Unity Catalog.  
+This repository contains a few items in the [src folder](./src/) that showcase what is already constructed so you do not have to build the Power BI Report, the Power App and the Power Automate Cloud flow from scratch.  We just need to go through some steps on how to integrate them and then review the various components within.
 
-## src folder
+For this example, I am using the golddb.Products delta table within an Azure Databricks Unity Catalog that I will detail how to create from the [products.csv](./src/products.csv) file in the src folder.  
+
+## Architectural Overview
+![Architecture diagram](img/Architecture.png)
+
+### Databricks
+The Product data resides in a Delta table that is then served to both Power BI and the Power App and is updated via the Power Automate Cloud Flow.
+
+### Power BI
+- This reads the Product Delta table from Databricks via Direct Query
+- A Power App is embedded in the report and we use the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability to pass the product data to the Power App.
+
+### Power App
+- It is embedded within the Power BI Report via the web service / browser
+- This reads the Product Delta table via the Power BI report via the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability.
+- A button click in the Power App triggers the Power Automate Cloud Flow.
+
+### Power Automate Cloud Flow
+- Activated from the Power App
+- Updates the Product Delta table in Databricks.
+
+
+## src folder contents
 - **products.csv** 
     - This contains the data we will use to upload to an Azure Databricks Volume within Unity Catalog and then create a delta table from that volume.
 - **Databricks Flow and Apps Power Automate Solution file**
@@ -17,25 +39,7 @@ For this example, I am using the golddb.Products delta table within an Azure Dat
 - **Editable-Products-Databricks.pbix**
     - This is the Power BI Report we will publish to the service and add the Power App to.
 
-## Architectural Overview
-![Architecture diagram](img/architecture.png)
 
-### Databricks
-The Product data resides in a Delta table that is then served to both Power BI and the Power App and is updated via the Power Automate Cloud Flow.
-
-### Power BI
-- This reads the Product Delta table from Databricks via Direct Query
-- A Power App is embedded in the report and we use the **PowerBIIntegration** function to filter the records within the Power App.
-
-### Power App
-- It is embedded within the Power BI Report via the web service / browser
-- This reads the Product Delta table from Databricks via the Azure Databricks Connection Power Platform connector.
-- Data is filtered to the selected row highlighted in the Poweer BI Report via the **PowerBIIntegration** function.
-- The Product Delta table in Databricks is updated via a Power Automate Cloud Flow.
-
-### Power Automate Cloud Flow
-- Activated from the Power App
-- Updates the Product Delta table in Databricks.
 
 
 ## Instructions
