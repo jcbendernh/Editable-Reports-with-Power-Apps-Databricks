@@ -1,14 +1,14 @@
 # Editable-Reports-with-Power-Apps-Databricks
-This is a repository that showcases how to enable the editing of data in Azure Databricks Delta tables via an embedded Power App within a Power BI.  
+This repository showcases how to enable editing data in Azure Databricks Delta tables via an embedded Power App within Power BI.  
 
 ## This Repo is Under Construction.  Updates are being made to the content. 
 
 ## Introduction
-A few years ago I documented the step of how to do this with an Azure SQL database at [Editable-Reports-with-Power-Apps](https://github.com/jcbendernh/Editable-Reports-with-Power-Apps/edit/main/README.md).  With the recent Azure Databricks connector enhancements in Power Platform, you can now achieve the same result in an Azure Databricks environment.
+A few years ago, I documented the steps for doing this with an Azure SQL database at [Editable-Reports-with-Power-Apps](https://github.com/jcbendernh/Editable-Reports-with-Power-Apps/edit/main/README.md). With the recent Azure Databricks connector enhancements in Power Platform, you can now achieve the same result in an Azure Databricks environment.
 
 This repository contains a few items in the [src folder](./src/) that showcase what is already constructed so you do not have to build the Power BI Report, the Power App and the Power Automate Cloud flow from scratch.  We just need to go through some steps on how to integrate them and then review the various components within.
 
-For this example, I am using the golddb.Products delta table within an Azure Databricks Unity Catalog that I will detail how to create from the [products.csv](./src/products.csv) file in the src folder.  
+For this example, I am using the golddb.Products delta table within an Azure Databricks Unity Catalog, which I describe how to create from the [products.csv](./src/products.csv) file in the src folder.  
 
 ## Architectural Overview
 ![Architecture diagram](img/Architecture.png)
@@ -21,7 +21,7 @@ The Product data resides in a Delta table that is then served to both Power BI a
 - A Power App is embedded in the report and we use the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability to pass the product data to the Power App.
 
 ### Power App
-- It is embedded within the Power BI Report via the web service / browser
+- It is embedded within the Power BI Report via a web browser
 - This reads the Product Delta table via the Power BI report via the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability.
 - A button click in the Power App triggers the Power Automate Cloud Flow.
 
@@ -33,10 +33,10 @@ The Product data resides in a Delta table that is then served to both Power BI a
 ## src folder contents
 - **products.csv** 
     - This contains the data we will use to upload to an Azure Databricks Volume within Unity Catalog and then create a delta table from that volume.
-- **Power Bi - Power App - Databricks Solution file**
+- **Power BI - Power App - Databricks Solution file**
     - **Products - Databricks Canvas App** - This is the Power Apps Canvas app that will be inserted into the Power BI Report.  It reads data from Power BI via [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) and updates the existing data via the UpdateDatabricksGoldProducts - Cloud Flow.
     - **UpdateDatabricksGoldProducts - Cloud Flow** - This utilizes the [Execute SQL Commands](https://learn.microsoft.com/en-us/connectors/databricks/#execute-a-sql-statement) to update the data in the Azure Databricks Delta table from the values captured on the Power Apps form.
-    - **Databricks** Connection Reference - This is the Authentication Type, Server Hostname. and HTTP Path setting to connect to the Databricks environment.
+    - **Databricks** Connection Reference - This is the Authentication Type, Server Hostname, and HTTP Path settings used to connect to the Databricks environment.
     - **dbxproductwarehouse_id** Environmental Variable - This is the Warehouse ID reference to the Serverless SQL compute in Databricks.
     - **dbxproductcatalog** Environmental Variable - This is the reference to the Databricks catalog of the products table.
     - **dbxproductschema** Environmental Variable - This is the reference to the Databricks schema of the products table.
@@ -55,14 +55,14 @@ The Product data resides in a Delta table that is then served to both Power BI a
     df = spark.read.option("header", "true").option("inferSchema", "true").csv("/Volumes/(catalog)/(schema)/products/products.csv")
     display(df)
     ```
-    Replace (catalog) and (schema) with you catalog and schema values.<br>
+    Replace (catalog) and (schema) with your catalog and schema values.<br>
 
     ```python
     df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable("(catalog).(schema).products")
     ```
-    Replace (catalog) and (schema) with you catalog and schema values.<br>
+    Replace (catalog) and (schema) with your catalog and schema values.<br>
 
-3. We need to make the ProductID field a non nullable primary key for the integration to work without errors.  To do so, paste the following cells into the notebook and run them.
+3. We need to make the ProductID field a non-nullable primary key for the integration to work without errors. To do so, paste the following cells into the notebook and run them.
     ```python
     %sql
     ALTER TABLE (catalog).(schema).products 
@@ -125,7 +125,7 @@ The Product data resides in a Delta table that is then served to both Power BI a
 
 9.  Once the report opens, click on **Transform Data** in the toolbar to open the Power Query Editor.  
 
-10.  Within the Power Query editor, double click on the **Source** option under **Applied Steps** to modify our Databricks connection values. 
+10.  Within the Power Query editor, double-click the **Source** option under **Applied Steps** to modify our Databricks connection values. 
 
 11.  Change the following values to match your environment.<BR>
     a. Server Hostname - **Server hostname** value on **Connection details** tab of the Databricks SQL Warehouse.<BR>
@@ -133,12 +133,12 @@ The Product data resides in a Delta table that is then served to both Power BI a
     c. Default Catalog (Optional).  *It says optional, but it is not.*<BR>
     d. Native query **schema** and **catalog** values in the select statement. <BR>
 
-12. When finished click **OK** and you should see the Product Data in the data preview.  Next, click **Close & Apply** to save your changes in Power Query and return to the report.  When finished, the report should look like the following:<BR>
+12. When finished, click **OK** and you should see the Product Data in the data preview. Next, click **Close & Apply** to save your changes in Power Query and return to the report. When finished, the report should look like the following:<BR>
     ![PowerBIDesktop](./img/PowerBIDesktop.png)
 
 13. Publish the Report to a Fabric/Power BI Workspace.
 
-14. Within your Fabric/Power BI Workspace, verify your credentials on the your **Editable-Products-Databricks** semantic model by going under **Settings** and then **Data source credentials** and **Edit credentials** and verify the following settings and click **Sign in**:<BR>
+14. Within your Fabric/Power BI Workspace, verify your credentials on your **Editable-Products-Databricks** semantic model by going under **Settings**, then **Data source credentials**, then **Edit credentials**. Verify the following settings and click **Sign in**:<BR>
     |Field | Value |  
     |----------|----------|
     | Authentication Type: | OAuth2 |
@@ -171,7 +171,7 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
     ![PowerAppsData](./img/PowerAppsData.png)
 
 
-20. This will change the appearance of the Power App control in the canvas and click the **Choose App** button and then accept any popups to get you to the Power Apps Studio in a web browser.
+20. This will change the appearance of the Power App control on the canvas. Click the **Choose App** button, then accept any pop-ups to open Power Apps Studio in a web browser.
      ![PowerAppsChooseApp](./img/PowerAppsChooseApp.png)
 
 21. Select **Power BI - Databricks Form** from the listing and click **Add**.
@@ -180,13 +180,13 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 
 23. Within the Power App window, click **Skip** at the Welcome to Power App Studio window to get to the App canvas.
 
-24. We need to save the Power App to capture the new fields come through via the PowerBIIntegration. You will notice the save button is greyed out.  Highlight the Update Product button and **move it to enable the Save button**.  Click **Save** and then click **Publish**.  You can close out the Power Apps tab.
+24. We need to save the Power App to capture the new fields that come through via PowerBIIntegration. You will notice the save button is grayed out. Highlight the Update Product button and **move it to enable the Save button**. Click **Save** and then click **Publish**. You can close the Power Apps tab.
     ![PowerAppsSave](./img/PowerAppsSave.png)
 
 25.  Return to the Power BI interface and close **Save** in the toolbar and then click **Reading View**. 
     ![PowerBISave](./img/PowerBISave.png)
 
-26.  You will now need to refresh the report via the Browser refresh for the new changes to take effect.  Click on a row in the table and the fields should populate in the Power App. 
+26.  You will now need to refresh the report in the browser for the new changes to take effect. Click a row in the table and the fields should populate in the Power App. 
     ![PowerBIApp](./img/PowerBIApp.png)
 
 **Congratulations!  You have completed this tutorial**
@@ -194,11 +194,11 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 ## Appendix
 
 ### Power App Overview
-This provides an overview of the components and their key components with regards to properties.  These showcase the selected record in the Power BI Report.
+This provides an overview of the components and their key properties. These showcase the selected record in the Power BI Report.
     
 |Component | Value |  
 |----------|----------|
-| lblProductID | View only label of the Product ID|
+| lblProductID | View-only label of the Product ID|
 | edtProductName | Edit field of the Product Name |
 | edtProductNumber | Edit field of the Product Number|
 | edtUnitPrice | Edit field of the Unit Price numeric field|
@@ -206,7 +206,7 @@ This provides an overview of the components and their key components with regard
 | edtParentCategory | Edit field of the Parent Category Name |
 | edtCategory | Edit field of the Category|
 | btnUpdate | When clicked, this triggers the UpdateDatabricksGoldProducts Power Automate Cloud Flow |
-| UpdateProductInfoStatus | This shows the status of update in Databricks when the button is clicked | 
+| UpdateProductInfoStatus | This shows the status of the update in Databricks when the button is clicked | 
 
 There are quite a few formulas that are utilized in this app.  At the core of this, we filter the record with the following formula:
 
@@ -214,7 +214,7 @@ There are quite a few formulas that are utilized in this app.  At the core of th
 First(PowerBIIntegration.Data).ProductID
 ```
 
-If we just use this formula, the form is not responsive to the navigation within Power BI and may confuse the user, so we use a formula below on the **Default** property that takes into account row count, meaning if no record is selected, the fields are blank.
+If we just use this formula, the form is not responsive to navigation within Power BI and may confuse users, so we use the formula below on the **Default** property. It accounts for row count, meaning if no record is selected, the fields are blank.
 
 ```javascript
 If(
@@ -237,7 +237,7 @@ If(
 ```
 
 The action that occurs with the button click / **OnSelect** property is a bit more complex and has three parts to it.
-- It first resets the the **varUpdateMessage** status of the UpdateProductInfoStatus label to blank
+- It first resets the **varUpdateMessage** status of the UpdateProductInfoStatus label to blank
 - It submits the fields listed to the UpdateDatabricksGoldProducts Cloud Flow.<BR>
 **IMPORTANT**: The order of these fields must match the order of the fields listed in the Parameters on the first step of the Power Automate Cloud Flow for the fields to save correctly.
 - It updates the **varUpdateMessage** status of the UpdateProductInfoStatus label with the status of the UpdateDatabricksGoldProducts Cloud Flow.
@@ -275,7 +275,7 @@ PowerBIIntegration.Refresh()
 This Cloud Flow writes back to the Databricks Delta table in 4 steps.
 1. **When Power Apps calls a flow (V2)**<BR>
 This lists the Parameters which are the fields passed from the button click in the formula above.  <BR>
-**IMPORTANT**: The order of these fields listed in the parameters must match the order of the fields passed in the OnSelect statement of button in Power Apps fields to save correctly.<BR>
+**IMPORTANT**: The order of these fields listed in the parameters must match the order of the fields passed in the button **OnSelect** statement in Power Apps for the fields to save correctly.<BR>
 
     ![PowerAutomateStep1](./img/PowerAutomateStep1.png)
 
@@ -285,11 +285,11 @@ This passes the fields to the Databricks SQL Compute to update the record in the
     ![PowerAutomateStep2](./img/PowerAutomateStep2.png)
 
 3. **Check status and get results**<BR>
-This check the status of the previous step and can be passed to the last step.<BR>
+This checks the status of the previous step, and that result can be passed to the last step.<BR>
 
     ![PowerAutomateStep3](./img/PowerAutomateStep3.png)
 
 4. **Respond to a Power App or flow**<BR>
-Takes the result of the previous step and passed it back to the Power App.<BR>
+Takes the result of the previous step and passes it back to the Power App.<BR>
 
     ![PowerAutomateStep4](./img/PowerAutomateStep4.png)
