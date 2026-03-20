@@ -1,8 +1,6 @@
 # Editable-Reports-with-Power-Apps-Databricks
 This repository showcases how to enable editing data in Azure Databricks Delta tables via an embedded Power App within Power BI.  
 
-## This Repo is Under Construction.  Updates are being made to the content. 
-
 ## Introduction
 A few years ago, I documented the steps for doing this with an Azure SQL database at [Editable-Reports-with-Power-Apps](https://github.com/jcbendernh/Editable-Reports-with-Power-Apps/edit/main/README.md). With the recent Azure Databricks connector enhancements in Power Platform, you can now achieve the same result in an Azure Databricks environment.
 
