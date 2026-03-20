@@ -194,6 +194,78 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 ## Appendix
 
 ### Power App Overview
+This provides an overview of the components and their key components with regards to properties.  These showcase the selected record in the Power BI Report.
+    
+|Component | Value |  
+|----------|----------|
+| lblProductID | View only label of the Product ID|
+| edtProductName | Edit field of the Product Name |
+| edtProductNumber | Edit field of the Product Number|
+| edtUnitPrice | Edit field of the Unit Price numeric field|
+| edtRetailPrice | Edit field of the Retail Price numeric field|
+| edtParentCategory | Edit field of the Parent Category Name |
+| edtCategory | Edit field of the Category|
+| btnUpdate | When clicked, this triggers the UpdateDatabricksGoldProducts Power Automate Cloud Flow |
+| UpdateProductInfoStatus | This shows the status of update in Databricks when the button is clicked | 
+
+There are quite a few formulas that are utilized in this app.  At the core of this, we filter the record with the following formula:
+
+```javascript
+First(PowerBIIntegration.Data).ProductID
+```
+
+If we just use this formula, the form is not responsive to the navigation within Power BI and may confuse the user, so we use a formula below that takes into account row count, meaning if no record is selected, the fields are blank.
+
+```javascript
+If(
+    CountRows(PowerBIIntegration.Data) = 1,
+    First(PowerBIIntegration.Data).ProductID,
+    Blank()
+)
+```
+For the numeric fields, we modify this formula a bit as they are currency fields.
+
+```javascript
+If(
+    CountRows(PowerBIIntegration.Data) = 1,
+    Text(
+        First(PowerBIIntegration.Data).UnitPrice,
+        "[$-en-US]$#,##0.00"
+    ),
+    Blank()
+)
+```
+
+
+The action that occurs with the button click is a bit more complex.  
+
+```javascript
+// Reset state
+Set(varUpdateMessage, Blank());
+
+IfError(
+    // Try: run the flow
+    Set(
+        varUpdateResponse,
+        UpdateDatabricksGoldProducts.Run(
+            edtProductID.Text,
+            edtProductName.Text,
+            edtProductNumber.Text,
+            Value(edtUnitPrice.Text, "en-US"),
+            Value(edtRetailPrice.Text, "en-US"),
+            edtParentCategory.Text,
+            edtCategory.Text
+        )
+    );
+
+    // If the flow call succeeds
+    Set(varUpdateMessage, "Update succeeded"),
+
+    // If the flow call errors
+    Set(varUpdateMessage, "Update failed")
+);
+PowerBIIntegration.Refresh()
+```
 
 ### Power Automate Overview
 
