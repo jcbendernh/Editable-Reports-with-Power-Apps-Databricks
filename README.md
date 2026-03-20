@@ -214,7 +214,7 @@ There are quite a few formulas that are utilized in this app.  At the core of th
 First(PowerBIIntegration.Data).ProductID
 ```
 
-If we just use this formula, the form is not responsive to the navigation within Power BI and may confuse the user, so we use a formula below that takes into account row count, meaning if no record is selected, the fields are blank.
+If we just use this formula, the form is not responsive to the navigation within Power BI and may confuse the user, so we use a formula below on the **Default** property that takes into account row count, meaning if no record is selected, the fields are blank.
 
 ```javascript
 If(
@@ -236,7 +236,7 @@ If(
 )
 ```
 
-The action that occurs with the button click is a bit more complex and has three parts to it.
+The action that occurs with the button click / **OnSelect** property is a bit more complex and has three parts to it.
 - It first resets the the **varUpdateMessage** status of the UpdateProductInfoStatus label to blank
 - It submits the fields listed to the UpdateDatabricksGoldProducts Cloud Flow.<BR>
 **IMPORTANT**: The order of these fields must match the order of the fields listed in the Parameters on the first step of the Power Automate Cloud Flow for the fields to save correctly.
@@ -271,3 +271,25 @@ PowerBIIntegration.Refresh()
 ```
 
 ### Power Automate Overview
+
+This Cloud Flow writes back to the Databricks Delta table in 4 steps.
+1. **When Power Apps calls a flow (V2)**<BR>
+This lists the Parameters which are the fields passed from the button click in the formula above.  <BR>
+**IMPORTANT**: The order of these fields listed in the parameters must match the order of the fields passed in the OnSelect statement of button in Power Apps fields to save correctly.<BR>
+
+    ![PowerAutomateStep1](./img/PowerAutomateStep1.png)
+
+2.  **Execute a SQL statement**<BR>
+This passes the fields to the Databricks SQL Compute to update the record in the Delta table.<BR>
+
+    ![PowerAutomateStep2](./img/PowerAutomateStep2.png)
+
+3. **Check status and get results**<BR>
+This check the status of the previous step and can be passed to the last step.<BR>
+
+    ![PowerAutomateStep3](./img/PowerAutomateStep3.png)
+
+4. **Respond to a Power App or flow**<BR>
+Takes the result of the previous step and passed it back to the Power App.<BR>
+
+    ![PowerAutomateStep4](./img/PowerAutomateStep4.png)
