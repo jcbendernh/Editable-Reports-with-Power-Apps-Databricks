@@ -4,15 +4,15 @@ This repository showcases how to enable editing data in Azure Databricks Delta t
 ## Introduction
 A few years ago, I documented the steps for doing this with an Azure SQL database at [Editable-Reports-with-Power-Apps](https://github.com/jcbendernh/Editable-Reports-with-Power-Apps/edit/main/README.md). With the recent Azure Databricks connector enhancements in the Power Platform, you can now achieve the same result in an Azure Databricks environment.
 
-This repository contains a few items in the [src folder](./src/) that showcase what is already constructed so you do not have to build the Power BI Report, the Power App and the Power Automate Cloud flow from scratch.  We just need to go through some steps on how to integrate them and then review the various components within.
+This repository contains a few items in the [src folder](./src/) that showcase what is already constructed so you do not have to build the Power BI Report, the Power App and the Power Automate Cloud flow from scratch.  We just need to go through some steps on how to integrate them and then review the various components.
 
-For this example, I am using the golddb.Products delta table within an Azure Databricks Unity Catalog, which I describe how to create from the [products.csv](./src/products.csv) file in the src folder.  
+For this example, I am using the golddb.Products delta table within an Azure Databricks Unity Catalog.  Instructions on how to create the delta table from the [products.csv](./src/products.csv) file in the src folder are listed below.  
 
 ## Architectural Overview
 ![Architecture diagram](img/Architecture.png)
 
 ### Databricks
-The Product data resides in a Delta table that is then served to both Power BI and the Power App and is updated via the Power Automate Cloud Flow.
+The Product data resides in a Delta table that is served to both the Power BI report and the Power App and is updated via the Power Automate Cloud Flow.
 
 ### Power BI
 - This reads the Product Delta table from Databricks via Direct Query
