@@ -172,19 +172,19 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 20. This will change the appearance of the Power App control on the canvas. Click the **Choose App** button, then accept any pop-ups to open Power Apps Studio in a web browser.<br>
      ![PowerAppsChooseApp](./img/PowerAppsChooseApp.png)
 
-21. S>elect **Power BI - Databricks Form** from the listing and click **Add**.
+21. Select **Power BI - Databricks Form** from the listing and click **Add**.
 
 22. At the next screen, click **Go to Power Apps Studio**.  It will open up a new tab with the Power App available.
 
 23. Within the Power App window, click **Skip** at the Welcome to Power App Studio window to get to the App canvas.
 
-24. We need to save the Power App to capture the new fields that come through via PowerBIIntegration. You will notice the save button is grayed out. Highlight the Update Product button and **move it to enable the Save button**. Click **Save** and then click **Publish**. You can close the Power Apps tab.
+24. We need to save the Power App to capture the new fields that come through via PowerBIIntegration. You will notice the save button is grayed out. Highlight the Update Product button and **move it to enable the Save button**. Click **Save** and then click **Publish**. When finished, close the Power Apps tab.
     ![PowerAppsSave](./img/PowerAppsSave.png)
 
-25.  Return to the Power BI interface and close **Save** in the toolbar and then click **Reading View**. 
+25.  Return to the Power BI interface and click **Save** in the toolbar and then click **Reading View**. 
     ![PowerBISave](./img/PowerBISave.png)
 
-26.  You will now need to refresh the report in the browser for the new changes to take effect. Click a row in the table and the fields should populate in the Power App. 
+26.  You will need to refresh the report in the browser for the new changes to take effect. Select a row in the table and the corresponding field values should populate in the Power App. 
     ![PowerBIApp](./img/PowerBIApp.png)
 
 **Congratulations!  You have completed this tutorial**
