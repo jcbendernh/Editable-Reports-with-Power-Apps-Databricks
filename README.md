@@ -206,13 +206,13 @@ This provides an overview of the components and their key properties. These show
 | btnUpdate | When clicked, this triggers the UpdateDatabricksGoldProducts Power Automate Cloud Flow |
 | UpdateProductInfoStatus | This shows the status of the update in Databricks when the button is clicked | 
 
-There are quite a few formulas that are utilized in this app.  At the core of this, we filter the record with the following formula:
+There are quite a few formulas that are utilized in this app.  At the core of this, we filter the record like the following example:
 
 ```javascript
 First(PowerBIIntegration.Data).ProductID
 ```
 
-If we just use this formula, the form is not responsive to navigation within Power BI and may confuse users, so we use the formula below on the **Default** property. It accounts for row count, meaning if no record is selected, the fields are blank.
+If we just use this formula, the form is not responsive to navigation within Power BI and may confuse users, so we use formulas similar to the example below on the **Default** property of the display and edits fields. It accounts for row count, meaning if no record is selected, the fields are blank.
 
 ```javascript
 If(
@@ -221,7 +221,7 @@ If(
     Blank()
 )
 ```
-For the numeric fields, we modify this formula a bit as they are currency fields.
+For the numeric fields, we modify the formula as they are currency fields.
 
 ```javascript
 If(
@@ -236,9 +236,9 @@ If(
 
 The action that occurs with the button click / **OnSelect** property is a bit more complex and has three parts to it.
 - It first resets the **varUpdateMessage** status of the UpdateProductInfoStatus label to blank
-- It submits the fields listed to the UpdateDatabricksGoldProducts Cloud Flow.<BR>
+- It submits the fields listed to the **UpdateDatabricksGoldProducts** Cloud Flow.<BR>
 **IMPORTANT**: The order of these fields must match the order of the fields listed in the Parameters on the first step of the Power Automate Cloud Flow for the fields to save correctly.
-- It updates the **varUpdateMessage** status of the UpdateProductInfoStatus label with the status of the UpdateDatabricksGoldProducts Cloud Flow.
+- It updates the **varUpdateMessage** status of the UpdateProductInfoStatus label with the status of the Cloud Flow.
 
 ```javascript
 // Reset state
@@ -283,7 +283,7 @@ This passes the fields to the Databricks SQL Compute to update the record in the
     ![PowerAutomateStep2](./img/PowerAutomateStep2.png)
 
 3. **Check status and get results**<BR>
-This checks the status of the previous step, and that result can be passed to the last step.<BR>
+This checks the status of the previous step and the result can be passed to the last step.<BR>
 
     ![PowerAutomateStep3](./img/PowerAutomateStep3.png)
 
