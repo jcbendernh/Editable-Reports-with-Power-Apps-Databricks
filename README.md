@@ -15,17 +15,17 @@ For this example, I am using the golddb.Products delta table within an Azure Dat
 The Product data resides in a Delta table that is served to both the Power BI report and the Power App and is updated via the Power Automate Cloud Flow.
 
 ### Power BI
-- This reads the Product Delta table from Databricks via Direct Query
+- This reads the Product Delta table from Databricks via Direct Query.
 - A Power App is embedded in the report and we use the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability to pass the product data to the Power App.
 
 ### Power App
-- It is embedded within the Power BI Report via a web browser
-- This reads the Product Delta table via the Power BI report via the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability.
+- It is embedded within the Power BI Report.
+- It reads the Product Delta table via the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability from Power Bi.
 - A button click in the Power App triggers the Power Automate Cloud Flow.
 
 ### Power Automate Cloud Flow
 - Activated from the Power App
-- Updates the Product Delta table in Databricks.
+- It updates the Product Delta table in Databricks.
 
 
 ## src folder contents
