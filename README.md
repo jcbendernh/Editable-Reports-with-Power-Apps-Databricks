@@ -32,8 +32,8 @@ The Product data resides in a Delta table that is served to both the Power BI re
 - **products.csv** 
     - This contains the data we will use to upload to an Azure Databricks Volume within Unity Catalog and then create a delta table from that volume.
 - **Power BI - Power App - Databricks Solution file**
-    - **Products - Databricks Canvas App** - This is the Power Apps Canvas app that will be inserted into the Power BI Report.  It reads data from Power BI via [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) and updates the existing data via the UpdateDatabricksGoldProducts - Cloud Flow.
-    - **UpdateDatabricksGoldProducts - Cloud Flow** - This utilizes the [Execute SQL Commands](https://learn.microsoft.com/en-us/connectors/databricks/#execute-a-sql-statement) to update the data in the Azure Databricks Delta table from the values captured on the Power Apps form.
+    - **Products - Databricks Canvas App** - This will be inserted into the Power BI Report.  It reads data via the [PowerBIIntegration](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual) capability from Power BI and updates the existing data in Databricks via the **UpdateDatabricksGoldProducts** - Cloud Flow.
+    - **UpdateDatabricksGoldProducts - Cloud Flow** - This utilizes the [Execute SQL Commands](https://learn.microsoft.com/en-us/connectors/databricks/#execute-a-sql-statement) to update the data in Azure Databricks from the values captured on the Power Apps form.
     - **Databricks** Connection Reference - This is the Authentication Type, Server Hostname, and HTTP Path settings used to connect to the Databricks environment.
     - **dbxproductwarehouse_id** Environmental Variable - This is the Warehouse ID reference to the Serverless SQL compute in Databricks.
     - **dbxproductcatalog** Environmental Variable - This is the reference to the Databricks catalog of the products table.
