@@ -45,10 +45,10 @@ The Product data resides in a Delta table that is served to both the Power BI re
 
 ### Databricks
 
-**IMPORTANT:** Please utilize a serverless SQL Warehouse so that the startup time is in seconds and not minutes.  If you use a traditional SQL Warehouse, the Power Automate Cloud Flow will time out if the SQL warehouse is not started.  To create one, follow these instructions: [Create a SQL warehouse](https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/create?source=recommendations)
+**IMPORTANT:** Please utilize a serverless SQL Warehouse so that the startup time is in seconds and not minutes.  If you use a traditional SQL Warehouse, the Power Automate Cloud Flow will time out if the SQL warehouse is not started.  To create  serverless SQL Warehouse, follow these instructions: [Create a SQL warehouse](https://learn.microsoft.com/en-us/azure/databricks/compute/sql-warehouse/create?source=recommendations)
 
-1. Upload the [`products.csv`](./src/products.csv) to a volume within your Databricks Unity Catalog.  For instructions on how to do so, check out [Upload files to a Unity Catalog volume](https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-to-volume).
-2. Create a Python notebook in your Databricks workspace and paste the following cells to read the products.csv and write the data to a new delta table in your Databricks catalog. <BR>
+1. Upload the [`products.csv`](./src/products.csv) to a volume within your Databricks Unity Catalog.  For instructions, check out [Upload files to a Unity Catalog volume](https://learn.microsoft.com/en-us/azure/databricks/ingestion/file-upload/upload-to-volume).
+2. Create a Python notebook in your Databricks workspace and copy & paste the following cells to read the products.csv and write the data to a new delta table in your Databricks catalog. <BR>
     ```python
     df = spark.read.option("header", "true").option("inferSchema", "true").csv("/Volumes/(catalog)/(schema)/products/products.csv")
     display(df)
@@ -73,7 +73,7 @@ The Product data resides in a Delta table that is served to both the Power BI re
     ADD CONSTRAINT products_pk PRIMARY KEY (ProductID)
     ```
 
-4. For our select statement that will be utilized by the Power BI report, we need to convert the timestamp field to a date field in the select statement as the Power BI report has issues with the Power Apps integration when Databricks timestamps with UTC offset are utilized. Thus, our SQL query will look like the following.
+4. For our select statement that will be utilized by the Power BI report, we need to convert the timestamp field to a date field as the Power BI report has issues with the Power Apps integration when Databricks timestamps with UTC offset are utilized. Thus, our SQL query will look like the following.
 
     ```sql
     select 
@@ -113,7 +113,7 @@ The Product data resides in a Delta table that is served to both the Power BI re
     | dbxproductwarehouse_id | This can be found on the **Overview** tab of the SQL Warehouse within the Databricks Workspace | 
     | dbxproductschema | The name of the Databricks **schema** where the Product table resides | 
 
-    NOTE:  This import is not instantaneous.  You will probably have to wait a few minutes for the following for it to show in the listing.  Once completed, you should see a screen like below.
+    NOTE:  This import is not instantaneous.  You will probably have to wait a few minutes for it to show in the listing.  Once completed, you should see a screen like below.
 
     ![SolutionImport](./img/SolutionImport.png)
  
@@ -131,7 +131,7 @@ The Product data resides in a Delta table that is served to both the Power BI re
     c. Default Catalog (Optional).  *It says optional, but it is not.*<BR>
     d. Native query **schema** and **catalog** values in the select statement. <BR>
 
-12. When finished, click **OK** and you should see the Product Data in the data preview. Next, click **Close & Apply** to save your changes in Power Query and return to the report. When finished, the report should look like the following:<BR>
+12. When finished, click **OK** and you should see the updated data in the data preview. Next, click **Close & Apply** to save your changes in Power Query and return to the report. When finished, the report should look like the following:<BR>
     ![PowerBIDesktop](./img/PowerBIDesktop.png)
 
 13. Publish the Report to a Fabric/Power BI Workspace.
@@ -152,7 +152,7 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
 
 16. With the **Editable-Products-Databricks** report open in Fabric Portal, click the **Edit** which will open the Filters, Visualizations and Data panes to the right.
 
-17. Select the **Power App for Power BI** control under the **Visualizations** pane to add it to the canvas of the report.
+17. Select the **Power Apps for Power BI** control under the **Visualizations** pane to add it to the canvas of the report.
      ![Visualizations](./img/Visualizations.png)
 
 18. Resize the Power App control so that it takes up the right section of the report.
@@ -169,10 +169,10 @@ Showtime!  Now we will start to configure the Power App <-> Power BI Integration
     ![PowerAppsData](./img/PowerAppsData.png)
 
 
-20. This will change the appearance of the Power App control on the canvas. Click the **Choose App** button, then accept any pop-ups to open Power Apps Studio in a web browser.
+20. This will change the appearance of the Power App control on the canvas. Click the **Choose App** button, then accept any pop-ups to open Power Apps Studio in a web browser.<br>
      ![PowerAppsChooseApp](./img/PowerAppsChooseApp.png)
 
-21. Select **Power BI - Databricks Form** from the listing and click **Add**.
+21. S>elect **Power BI - Databricks Form** from the listing and click **Add**.
 
 22. At the next screen, click **Go to Power Apps Studio**.  It will open up a new tab with the Power App available.
 
